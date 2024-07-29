@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Иван Филипьев](https://up.htmlacademy.ru/adaptive/32/user/2514125).
-* Наставник: `Антон Варнавский` (https://htmlacademy.ru/profile/anton_varnauski).
+* Наставник: [Антон Варнавский`] (https://htmlacademy.ru/profile/anton_varnauski).
 
 ---
 
