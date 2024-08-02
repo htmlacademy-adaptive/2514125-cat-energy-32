@@ -10,28 +10,26 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
-    <a class="main-header__logo" href="#">
-      <img class="main-header__logo-icon" src="#" width="33" height="38" alt="Иконка логотипа Cat Energy">
-      <img class="main-header__logo-text" src="#" width="101" height="18" alt="Буквенный логотип Cat Energy">
+  <header class="header">
+    <a class="header__logo" href="#">
+      <img class="header__logo-icon" src="#" width="33" height="38" alt="Иконка логотипа Cat Energy">
+      <img class="header__logo-text" src="#" width="101" height="18" alt="Буквенный логотип Cat Energy">
     </a>
-    <nav class="main-navigation">
+    <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню навигации</span>
       </button>
-      <div class="main-navigation-container">
-        <ul class="main-navigation__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a href="#">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--current">
+          <a class="site-list__link">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Подбор программы</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="main-container">
@@ -41,15 +39,18 @@
       <button class="intro__button button" type="button">Подобрать программу</button>
     </section>
     <section class="catalog">
+      <h2 class="visually-hidden">Выбор каталога</h2>
       <article class="product-card">
-        <h2 class="product-card__title">похудение</h2>
-        <p class="product-card__discription">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat
+        <h3 class="product-card__title">похудение</h3>
+        <p class="product-card__discription">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+          Пора на диету! Cat
           Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a class="product-card__link" href="#">каталог slim</a>
       </article>
       <article class="product-card">
-        <h2 class="product-card__title">набор массы</h2>
-        <p class="product-card__discription">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту
+        <h3 class="product-card__title">набор массы</h3>
+        <p class="product-card__discription">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
+          Pro поможет вашему коту
           нарастить необходимые мышцы!</p>
         <a class="product-card__link" href="#">каталог pro</a>
       </article>
@@ -75,61 +76,57 @@
     </section>
     <section class="statistic">
       <h2 class="statistic__title">Живой пример</h2>
-      <p class="">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный
+      <p class="statistic__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+        Отличный
         результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
       </p>
-      <dl class="statistic__list">
-        <div class="statistic__item">
-          <dt class="statistic__number">5 КГ</dt>
-          <dd class="statistic__description">снижение веса</dd>
-        </div>
-        <div class="statistic__item">
-          <dt class="statistic__number">60 ДНЕЙ</dt>
-          <dd class="statistic__description">затрачено времени</dd>
-        </div>
-      </dl>
+      <ul class="statistic__list">
+        <li class="statistic__item">
+          <b class="statistic__number">5 КГ</b>
+          <p class="statistic__description">снижение веса</p>
+        </li>
+        <li class="statistic__item">
+          <b class="statistic__number">60 ДНЕЙ</b>
+          <p class="statistic__description">затрачено времени</p>
+        </li>
+      </ul>
       <p class="statistic__price">Затраты на питание:</p>
       <span class="statistic__price-number">15 000 РУБ.</span>
       <img class="" src="#" width="560" height="512" alt="Сравнение до и после питания Cat Energy">
     </section>
     <section class="contacts">
-      <header class="contacts__header">
-        <h3 class="contacts__title">приглашаем
+      <div class="contacts__container">
+        <p class="contacts__message">приглашаем
           к сотрудничеству
-          дилеров!</h3>
-        <address class="contacts__adress">ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург
+          дилеров!</p>
+        <address class="contacts__adress">
+          <p>ул. Большая
+            Конюшенная, д. 19/8</p>
+          <p>Санкт-Петербург</p>
         </address>
-      </header>
-      <img class="contacts__map" src="#" width="768" height="400" alt="Карта местоположения офиса">
+      </div>
+      <img class="contacts__map" src="#" width="320" height="362" alt="Карта местоположения офиса">
     </section>
   </main>
-  <footer class="main-footer">
-    <div class="main-footer__logo-container">
-      <a class="main-footer__logo" href="#">
-        <img class="main-footer__logo-text" src="#" width="128" height="24" alt="Буквенный логотип Cat Energy">
-      </a>
-    </div>
-    <div class="main-footer__social social">
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link soical-list__link--vkontakte" href="#">Мы в Вконтакте</a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--youtube" href="#">Мы в Youtube</a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--telegram" href="#">Мы в Telegram</a>
-        </li>
-      </ul>
-    </div>
-    <div class="main-footer__copyright copyright">
-      <a class="copyright__link" href="#">
-        <h4 class="copyright__title">HTML Academy</h4>
-        <img class="copyright__logo" src="#" width="27" height="34" alt="Логотип HTML Academy">
-      </a>
-    </div>
+  <footer class="footer">
+    <a class="footer__logo" href="#">
+      <img class="footer__logo-text" src="#" width="128" height="24" alt="Буквенный логотип Cat Energy">
+    </a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link soical-list__link--vk" href="#">Мы в Вконтакте</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--yt" href="#">Мы в Youtube</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--tg" href="#">Мы в Telegram</a>
+      </li>
+    </ul>
+    <a class="footer__copyright copyright" href="#">
+      <span class="copyright__title">HTML Academy</span>
+      <img class="copyright__logo" src="#" width="27" height="34" alt="Логотип HTML Academy">
+    </a>
   </footer>
 </body>
 
