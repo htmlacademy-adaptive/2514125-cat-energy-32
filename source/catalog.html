@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Cat Energy|Каталог</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="favicon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png" sizes="180x180">
   <link rel="manifest" href="manifest.webmanifest.json">
   <link rel="stylesheet" href="styles/styles.css">
@@ -16,8 +16,20 @@
   <!-- HEADER -->
   <header class="header">
     <a class="header__logo" href="index.html">
-      <img class="header__logo-icon" src="#" width="33" height="38" alt="Иконка логотипа Cat Energy">
-      <img class="header__logo-text" src="#" width="101" height="18" alt="Буквенный логотип Cat Energy">
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1200px)" srcset="images/logo-desktop.svg" width="70"
+          height="59">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+        <img class="header__logo-icon" src="/images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+      </picture>
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1200px)" srcset="images/logo-text-desktop.svg" width="118"
+          height="21">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101"
+          height="18">
+        <img class="header__logo-text" src="images/logo-text-mobile.svg" width="101" height="18"
+          alt="Текстовый логотип Cat Energy">
+      </picture>
     </a>
     <!-- NAVIGATION -->
     <nav class="main-nav">
