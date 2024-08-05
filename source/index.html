@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Cat Energy|Главная</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png" sizes="180x180">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -13,8 +15,20 @@
   <!-- HEADER -->
   <header class="header">
     <a class="header__logo" href="#">
-      <img class="header__logo-icon" src="#" width="33" height="38" alt="Иконка логотипа Cat Energy">
-      <img class="header__logo-text" src="#" width="101" height="18" alt="Буквенный логотип Cat Energy">
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1200px)" srcset="images/logo-desktop.svg" width="70"
+          height="59">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+        <img class="header__logo-icon" src="/images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+      </picture>
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1200px)" srcset="images/logo-text-desktop.svg" width="118"
+          height="21">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101"
+          height="18">
+        <img class="header__logo-text" src="images/logo-text-mobile.svg" width="101" height="18"
+          alt="Текстовый логотип Cat Energy">
+      </picture>
     </a>
     <!-- NAVIGATION -->
     <nav class="main-nav">
@@ -99,7 +113,13 @@
       </ul>
       <p class="statistic__price">Затраты на питание:</p>
       <span class="statistic__price-number">15 000 РУБ.</span>
-      <img class="statistic__image" src="#" width="560" height="512" alt="Сравнение до и после питания Cat Energy">
+      <picture>
+        <source type="image/png" media="(min-width: 768px)"
+          srcset="images/cat-result-slider-tablet@1x.png 1x, images/cat-result-slider-tablet@2x.png 2x" width="560" height="512">
+        <img class="statistic__image" src="images/cat-result-slider-mobile@1x.png"
+          srcset="images/cat-result-slider-mobile@2x.png 2x" width="280" height="256"
+          alt="Сравнение до и после питания Cat Energy">
+      </picture>
     </section>
     <!-- CONTACTS -->
     <section class="contacts">
@@ -114,7 +134,14 @@
           <p>Санкт-Петербург</p>
         </address>
       </div>
-      <img class="contacts__map" src="#" width="320" height="362" alt="Карта местоположения офиса">
+      <picture>
+        <source type="image/png" media="(min-width: 1200px)"
+          srcset="images/map-contact-desktop@1x.png 1x, images/map-contact-desktop@2x.png 2x" width="1440" height="400">
+        <source type="image/png" media="(min-width: 768px)"
+          srcset="images/map-contact-tablet@1x.png 1x, images/map-contact-tablet@2x.png 2x" width="768" height="400">
+        <img class="contacts__map" src="images/map-contact-mobile@1x.png" srcset="/images/map-contact-mobile@2x.png 2x"
+          width="320" height="362" alt="Карта местоположения офиса">
+      </picture>
     </section>
   </main>
   <!-- FOOTER -->
@@ -127,7 +154,8 @@
         <a class="social-list__link soical-list__link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link social-list__link--yt" href="https://www.youtube.com/user/htmlacademyru">Мы в Youtube</a>
+        <a class="social-list__link social-list__link--yt" href="https://www.youtube.com/user/htmlacademyru">Мы в
+          Youtube</a>
       </li>
       <li class="social-list__item">
         <a class="social-list__link social-list__link--tg" href="https://t.me/htmlacademy">Мы в Telegram</a>
