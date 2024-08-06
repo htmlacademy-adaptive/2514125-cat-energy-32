@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png" sizes="180x180">
+  <link rel="manifest" href="manifest.webmanifest.json">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -147,7 +148,14 @@
   <!-- FOOTER -->
   <footer class="footer">
     <a class="footer__logo" href="index.html">
-      <img class="footer__logo-text" src="#" width="128" height="24" alt="Буквенный логотип Cat Energy">
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1200px)" srcset="images/logo-text-mobile.svg" width="118"
+          height="21">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-mobile.svg" width="101"
+          height="18">
+        <img class=" footer__logo-text" src="images/logo-text-mobile.svg" width="101" height="18"
+          alt="Текстовый логотип Cat Energy">
+      </picture>
     </a>
     <ul class="social-list">
       <li class="social-list__item">
