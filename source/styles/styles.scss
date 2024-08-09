@@ -4,4 +4,28 @@
 @import "./common/fonts.scss";
 
 /* BLOCKS */
+@import "./blocks/visually-hidden";
 @import "./blocks/header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/button.scss";
+@import "./blocks/catalogs.scss";
+@import "./blocks/about.scss";
+@import "./blocks/statistic.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social-list.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/product-info.scss";
+@import "./blocks/more-products.scss";
+@import "./blocks/primary-button.scss";
+@import "./blocks/additional-product-info.scss";
+@import "./blocks/additional-product-card.scss";
+@import "./blocks/offer.scss";
+@import "./blocks/subscription.scss";
+
