@@ -1,5 +1,5 @@
 .intro {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $secondary-font;
   color: $sec-color-text-white;
   background-color: $base-bg-green;
 }
@@ -13,12 +13,4 @@
 .intro__slogan {
   line-height: 14px;
   text-transform: uppercase;
-}
-
-.intro__button {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 20px;
-  color: $sec-color-text-white;
-  background-color: $base-bg-green;
 }
