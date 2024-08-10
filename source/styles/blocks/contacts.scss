@@ -1,0 +1,17 @@
+.contacts__message {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $contacts-message-color;
+}
+
+.contacts__adress {
+  line-height: 20px;
+  font-style: normal;
+}
+
+.contacts--gray-bg {
+  background-color: $section-bg-color;
+}

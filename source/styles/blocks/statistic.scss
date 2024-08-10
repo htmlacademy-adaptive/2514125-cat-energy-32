@@ -1,0 +1,27 @@
+.statistic {
+  background-color: $section-bg-color;
+}
+
+.statistic__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  color: $sec-color-text-black;
+}
+
+.statistic__number {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $sec-color-text-black;
+}
+
+.statistic__price {
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $sec-color-text-black;
+}

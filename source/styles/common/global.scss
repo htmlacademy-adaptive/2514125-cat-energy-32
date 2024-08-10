@@ -4,3 +4,23 @@
 *::after {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $base-color-text-black;
+  background-color: $page-bg-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
