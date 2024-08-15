@@ -1,0 +1,44 @@
+.catalog-card {
+  background-color: $section-bg-color;
+}
+
+.catalog-card__title {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 700;
+  color: $sec-color-text-black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.catalog-card__description {
+  color: $base-color-text-black;
+}
+
+.catalog-card__link {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: $sec-color-text-black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

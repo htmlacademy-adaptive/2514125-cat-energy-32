@@ -1,0 +1,11 @@
+.social-list {
+  position: relative;
+}
+
+.soical-list__link--vk::after {
+  @include pseudo(27px, 17px);
+  mask-image: url("../../icons/social/vk-icon.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 100%;
+}

@@ -12,6 +12,16 @@ body {
   line-height: 18px;
   color: $base-color-text-black;
   background-color: $page-bg-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 a {
