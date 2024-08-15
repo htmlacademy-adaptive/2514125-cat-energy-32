@@ -7,6 +7,11 @@
   text-align: center;
   color: $sec-color-text-white;
   background-color: $base-bg-green;
+  cursor: pointer;
+
+  &--transparent-bg {
+    background-color: transparent;
+  }
 
   &--gray {
     color: $base-color-text-black;
