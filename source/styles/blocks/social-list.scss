@@ -40,16 +40,22 @@
     }
   }
 
-  &:hover {
+  &--vk:hover::after,
+  &--yt:hover::after,
+  &--tg:hover::after {
     background-color: #68b738;
     opacity: 0.6;
   }
 
-  &:focus {
+  &--vk:focus::after,
+  &--yt:focus::after,
+  &--tg:focus::after {
     background-color: #68b738;
   }
 
-  &:active {
+  &--vk:active::after,
+  &--yt:active::after,
+  &--tg:active::after {
     background-color: rgba(104, 183, 56, 0.3);
   }
 }
