@@ -1,3 +1,13 @@
+.more-products {
+  &::before {
+    @include pseudo(30px, 30px);
+    background-image: url("../../icons/catalog/catalog-plus-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+}
+
 .more-products__lead-text {
   font-family: $secondary-font;
   font-size: 16px;
