@@ -1,3 +1,25 @@
+.copyright {
+  &::before {
+    @include pseudo(27px, 34px);
+    mask-image: url("../../icons/social/html-academy-logo.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 100%;
+    background-color: $social-list-icon-color;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: $base-bg-green;
+  }
+
+  &:active::before {
+    background-color: $base-bg-green;
+    opacity: 0.3;
+  }
+}
+
+
 .copyright__title {
   font-size: 16px;
   line-height: 20px;

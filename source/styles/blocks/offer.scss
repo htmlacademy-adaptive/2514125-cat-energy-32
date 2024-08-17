@@ -1,5 +1,13 @@
 .offer {
-  background-color: $base-bg-green;
+  background-color: rgba(104, 183, 56, 0.85);
+
+  &::before {
+    @include pseudo(78px, 80px);
+    background-image: url("../../icons/catalog/gift-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
 }
 
 .offer__text {
