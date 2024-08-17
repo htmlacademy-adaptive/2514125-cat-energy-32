@@ -9,7 +9,8 @@
   background-color: $base-bg-green;
   cursor: pointer;
 
-  &--transparent-bg {
+  &--transparent-bg,
+  &--slider {
     background-color: transparent;
   }
 
