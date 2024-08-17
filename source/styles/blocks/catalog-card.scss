@@ -1,0 +1,78 @@
+.catalog-card {
+  background-color: $section-bg-color;
+
+  &--slim {
+    &::before {
+      @include pseudo (36px, 50px);
+      background-image: url("../../icons/index/cat-slim-icon-mobile.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &--pro {
+    &::before {
+      @include pseudo (67px, 28px);
+      background-image: url("../../icons/index/cat-pro-icon-mobile.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      top: 321px;
+      left: 0;
+    }
+  }
+}
+
+
+.catalog-card__title {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 700;
+  color: $sec-color-text-black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.catalog-card__description {
+  color: $base-color-text-black;
+}
+
+.catalog-card__link {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: $sec-color-text-black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &::after {
+    @include pseudo (32px, 10px);
+    mask-image: url("../../icons/index/arrow-icon.svg");
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+    mask-position: center;
+    background-color: #000000;
+  }
+}

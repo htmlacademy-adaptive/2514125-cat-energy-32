@@ -1,0 +1,34 @@
+.subscription__title {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $sec-color-text-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.subscription__text {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 24px;
+  color: $sec-color-text-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}

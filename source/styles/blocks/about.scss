@@ -1,0 +1,62 @@
+.about__title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
+  color: $sec-color-text-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.about__item {
+  &--composition {
+    &::before {
+      @include pseudo (25px, 28px);
+      background-image: url("../../icons/index/leaf-icon.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      background-color: #68b738;
+    }
+  }
+
+  &--cooking {
+    &::before {
+      @include pseudo (26px, 29px);
+      background-image: url("../../icons/index/glass-icon.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      background-color: #68b738;
+    }
+  }
+
+  &--replace {
+    &::before {
+      @include pseudo (25px, 30px);
+      background-image: url("../../icons/index/eat-icon.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      background-color: #68b738;
+    }
+  }
+
+  &--timing {
+    &::before {
+      @include pseudo (26px, 31px);
+      background-image: url("../../icons/index/scales-icon.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      background-color: #68b738;
+    }
+  }
+}
