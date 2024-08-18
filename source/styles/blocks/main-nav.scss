@@ -1,4 +1,6 @@
 .main-nav {
+  font-family: $secondary-font;
+
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
@@ -11,21 +13,33 @@
 }
 
 .main-nav__toggle {
-  &::before {
-    @include pseudo (18px, 18px);
-    mask-image: url("../../icons/cross-navmenu-mobile.svg");
-    mask-repeat: no-repeat;
-    mask-size: 100%;
-    mask-position: center;
-    background-color: #000000;
-  }
+  width: 18px;
+  height: 18px;
+  mask-image: url("../../icons/cross-navmenu-mobile.svg");
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  mask-position: center;
+  background-color: $sec-color-text-black;
+  position: absolute;
+  right: 0;
+  top: 0;
 
-  &:hover::before,
-  &:focus::before {
+  &:hover,
+  &:focus {
+    background-color: $sec-color-text-black;
     opacity: 0.6;
   }
 
-  &:active::before {
+  &:active {
+    background-color: $sec-color-text-black;
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed {
+  display: none;
 }
