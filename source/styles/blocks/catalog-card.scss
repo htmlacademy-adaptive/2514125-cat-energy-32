@@ -1,5 +1,14 @@
 .catalog-card {
+  width: 280px;
   background-color: $section-bg-color;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 
   &--slim {
     &::before {
@@ -8,7 +17,6 @@
       background-repeat: no-repeat;
       background-size: auto;
       background-position: center;
-      background-color: $base-bg-green;
     }
   }
 
@@ -19,7 +27,6 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: 100%;
-      background-color: $base-bg-green;
     }
   }
 }
@@ -31,16 +38,19 @@
   line-height: 37px;
   font-weight: 700;
   color: $sec-color-text-black;
+  text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 36px;
     line-height: 36px;
+    text-align: center;
   }
 }
 

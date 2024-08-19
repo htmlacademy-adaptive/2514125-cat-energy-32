@@ -1,11 +1,40 @@
 .intro {
+  height: 440px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-family: $secondary-font;
   color: $sec-color-text-white;
-  background-color: rgba(104, 183, 56, 0.85);
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), (rgba(104, 183, 56, 0.85))), url("../../images/index/index-background-cat-mobile@2x.png");
+
+  background-color: $base-bg-green;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), (rgba(104, 183, 56, 0.85))), url("../../images/index/index-background-cat-mobile@1x.png");
   background-position: center, center;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  // justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    height: 875px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: $page-bg-color;
+    background-image: none;
+    color: $sec-color-text-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 694px;
+    padding-left: 110px;
+    padding-right: 110px;
+    background-color: $page-bg-color;
+    background-image: linear-gradient(to right, $page-bg-color 50%, rgba(104, 183, 56, 0.85) 50%), url("../../images/index/index-background-cat-desktop@1x.png");
+    background-position: center, left;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+  }
 }
 
 .intro__title {

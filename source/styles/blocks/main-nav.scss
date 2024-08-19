@@ -1,5 +1,6 @@
 .main-nav {
   font-family: $secondary-font;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -13,16 +14,32 @@
 }
 
 .main-nav__toggle {
-  width: 18px;
-  height: 18px;
-  mask-image: url("../../icons/cross-navmenu-mobile.svg");
-  mask-repeat: no-repeat;
-  mask-size: 100%;
-  mask-position: center;
-  background-color: $sec-color-text-black;
-  position: absolute;
-  right: 0;
-  top: 0;
+  &--menu-options {
+    width: 24px;
+    height: 24px;
+    mask-image: url("../../icons/menu-options-icon-mobile.svg");
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+    mask-position: center;
+    background-color: $sec-color-text-black;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+
+  &--close-menu {
+    width: 18px;
+    height: 18px;
+    mask-image: url("../../icons/cross-navmenu-mobile.svg");
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+    mask-position: center;
+    background-color: $sec-color-text-black;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
   &:hover,
   &:focus {
@@ -40,6 +57,3 @@
   }
 }
 
-.main-nav--closed {
-  display: none;
-}

@@ -1,5 +1,5 @@
 .header {
-  padding: 13px 20px 15px;
+  width: 100%;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -7,11 +7,16 @@
 
   @media (min-width: $tablet-width) {
     @include flex (row, space-between, center);
-    padding: 25px 34px 65px 30px;
+    height: 75px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 55px 110px 29px;
+    height: 114px;
+    background-color: transparent;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 

@@ -1,10 +1,28 @@
+.about {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 82px 110px 71px;
+  }
+}
+
 .about__title {
+  margin-bottom: 40px;
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
   color: $sec-color-text-black;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -15,7 +33,40 @@
   }
 }
 
+.about__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
 .about__item {
+  min-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 280px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 37px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
   &--composition {
     &::before {
       @include pseudo (25px, 28px);
@@ -24,6 +75,15 @@
       background-size: 100%;
       background-position: center;
       background-color: #68b738;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 230px;
+      margin-right: 153px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 94px;
     }
   }
 
@@ -36,6 +96,14 @@
       background-position: center;
       background-color: #68b738;
     }
+
+    @media (min-width: $tablet-width) {
+      width: 246px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 79px;
+    }
   }
 
   &--replace {
@@ -47,6 +115,15 @@
       background-position: center;
       background-color: #68b738;
     }
+
+    @media (min-width: $tablet-width) {
+      width: 247px;
+      margin-right: 137px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 77px;
+    }
   }
 
   &--timing {
@@ -57,6 +134,10 @@
       background-size: 100%;
       background-position: center;
       background-color: #68b738;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 249px;
     }
   }
 }

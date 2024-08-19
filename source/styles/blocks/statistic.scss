@@ -1,21 +1,68 @@
 .statistic {
+  padding: 25px 20px 40px;
   background-color: $section-bg-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 30px 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 75px;
+  }
 }
 
 .statistic__title {
+  margin-bottom: 40px;
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
   color: $sec-color-text-black;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
     font-size: 60px;
     line-height: 60px;
+  }
+}
+
+.statistic__text {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.statistic__list {
+  @include flex (row, space-between, center);
+  column-gap: 32px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include flex (row, start, center);
+    margin: 0;
+    width: 367px;
+    column-gap: 43px;
+  }
+}
+
+.statistic__item {
+  @include flex (column, space-between, center);
+  min-width: 124px;
+
+  @media (min-width: $tablet-width) {
+    @include flex (column, space-between, center);
+    min-width: 162px;
   }
 }
 
@@ -54,6 +101,7 @@
 }
 
 .statistic__price {
+  margin-bottom: 20px;
   font-family: $secondary-font;
   line-height: 20px;
   font-weight: 700;
