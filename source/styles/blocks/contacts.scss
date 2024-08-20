@@ -1,12 +1,24 @@
+.contacts__container {
+  @include flex (row, space-between, center);
+  height: 112px;
+  padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    height: 200px;
+    padding: 60px 70px;
+  }
+}
+
 .contacts__message {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   color: $contacts-message-color;
 
   @media (min-width: $tablet-width) {
+    min-height: 80px;
     font-size: 20px;
     line-height: 26px;
   }
@@ -22,6 +34,9 @@
   font-style: normal;
 
   @media (min-width: $tablet-width) {
+    @include flex (column, space-between, flex-end);
+    min-width: 157px;
+    min-height: 80px;
     line-height: 20px;
   }
 
@@ -32,4 +47,20 @@
 
 .contacts--gray-bg {
   background-color: $section-bg-color;
+}
+
+.contacts__text--street {
+  @media (min-width: $tablet-width) {
+    min-width: 163px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.contacts__text--town {
+  @media (min-width: $tablet-width) {
+    min-width: 163px;
+    display: flex;
+    justify-content: flex-end;
+  }
 }

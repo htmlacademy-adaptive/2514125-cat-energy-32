@@ -14,7 +14,6 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  // justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     height: 875px;
@@ -40,7 +39,7 @@
 .intro__title {
   font-size: 36px;
   line-height: 36px;
-  font-weight: 700;
+  font-weight: 400;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -65,5 +64,12 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+.intro__button {
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    height: 54px;
   }
 }
