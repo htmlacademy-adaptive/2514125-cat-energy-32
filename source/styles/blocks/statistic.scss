@@ -1,6 +1,6 @@
 .statistic {
   padding: 25px 20px 40px;
-  background-color: $section-bg-color;
+  background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
     padding: 30px 30px 101px;
@@ -8,6 +8,15 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 110px 75px;
+  }
+}
+
+.statistic__wrap {
+  @include flex (column, space-between, center);
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -59,6 +68,8 @@
 .statistic__item {
   @include flex (column, space-between, center);
   min-width: 124px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
 
   @media (min-width: $tablet-width) {
     @include flex (column, space-between, center);
@@ -88,6 +99,9 @@
 .statistic__description {
   font-size: 12px;
   line-height: 12px;
+  position: relative;
+  top: 5px;
+  background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;

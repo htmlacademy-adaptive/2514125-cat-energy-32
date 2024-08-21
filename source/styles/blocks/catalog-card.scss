@@ -1,4 +1,5 @@
 .catalog-card {
+  position: relative;
   width: 280px;
   background-color: $section-bg-color;
 
@@ -16,7 +17,20 @@
       background-image: url("../../icons/index/cat-slim-icon-mobile.svg");
       background-repeat: no-repeat;
       background-size: auto;
-      background-position: center;
+      position: absolute;
+      z-index: 2;
+      top: 21px;
+      left: 27px;
+    }
+
+    &::after {
+      @include pseudo (50px, 50px);
+      background-color: $base-bg-green;
+      border-radius: 50%;
+      position: absolute;
+      z-index: 1;
+      top: 24px;
+      left: 20px;
     }
   }
 
@@ -25,8 +39,21 @@
       @include pseudo (67px, 28px);
       background-image: url("../../icons/index/cat-pro-icon-mobile.svg");
       background-repeat: no-repeat;
-      background-position: center;
       background-size: 100%;
+      position: absolute;
+      z-index: 2;
+      top: 35px;
+      left: 12px;
+    }
+
+    &::after {
+      @include pseudo (50px, 50px);
+      background-color: $base-bg-green;
+      border-radius: 50%;
+      position: absolute;
+      z-index: 1;
+      top: 24px;
+      left: 21px;
     }
   }
 }
@@ -52,10 +79,19 @@
     line-height: 36px;
     text-align: center;
   }
+
+  &--slim {
+    padding: 30px 80px 29px 90px;
+  }
+
+  &--pro {
+    padding: 30px 52px 29px 91px;
+  }
 }
 
 .catalog-card__description {
   color: $base-color-text-black;
+  padding: 0 33px 38px 20px;
 }
 
 .catalog-card__link {
@@ -64,6 +100,7 @@
   line-height: 16px;
   color: $sec-color-text-black;
   text-transform: uppercase;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -80,8 +117,26 @@
     mask-image: url("../../icons/index/arrow-icon.svg");
     mask-repeat: no-repeat;
     mask-size: 100%;
-    mask-position: center;
     background-color: #000000;
+    position: absolute;
+  }
+
+  &--slim {
+    padding: 0 126px 22px 20px;
+
+    &::after {
+      top: 6px;
+      left: 102px;
+    }
+  }
+
+  &--pro {
+    padding: 0 177px 22px 20px;
+
+    &::after {
+      top: 6px;
+      left: 98px;
+    }
   }
 
   &:hover,

@@ -31,7 +31,7 @@
     </a>
     <!-- NAVIGATION -->
     <nav class="header__nav main-nav ">
-      <button class="main-nav__toggle button main-nav__toggle--menu-options button--transparent-bg" type="button">
+      <button class="main-nav__toggle button main-nav__toggle--menu-open button--transparent-bg" type="button">
         <span class="visually-hidden">Переключить меню навигации</span>
       </button>
       <ul class="main-nav__list site-list list-style-reset">
@@ -51,31 +51,33 @@
   <main class="main-container">
     <!-- INTRO -->
     <section class="intro">
-      <h1 class="intro__title text-offset-reset">Функциональное питание для котов</h1>
-      <p class="intro__slogan text-offset-reset">Занялся собой? Займись котом!</p>
-      <picture>
-        <source type="image/png" media="(min-width: 1440px)" srcset="images/index/cat-energy-pro-index-desktop@1x.png 1x, images/index/cat-energy-pro-index-desktop@2x.png 2x" width="552" height="499">
-        <source type="image/png" media="(min-width: 768px)" srcset="images/index/cat-energy-pro-index-tablet@1x.png 1x, images/index/cat-energy-pro-index-mobile@2x.png 2x" width="709" height="609">
-        <img class="intro__image" src="images/index/cat-energy-pro-index-mobile@1x.png" srcset="images/index/cat-energy-pro-index-mobile@2x.png 2x" width="280" height="270" alt="Питание Cat Energy">
-      </picture>
-      <button class="intro__button button button--bigger-words" type="button">Подобрать программу</button>
+      <div class="intro__wrap">
+        <h1 class="intro__title text-offset-reset">Функциональное<br> питание для котов</h1>
+        <p class="intro__slogan text-offset-reset">Занялся собой? Займись котом!</p>
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/index/cat-energy-pro-index-desktop@1x.png 1x, images/index/cat-energy-pro-index-desktop@2x.png 2x" width="552" height="499">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/index/cat-energy-pro-index-tablet@1x.png 1x, images/index/cat-energy-pro-index-mobile@2x.png 2x" width="709" height="609">
+          <img class="intro__image" src="images/index/cat-energy-pro-index-mobile@1x.png" srcset="images/index/cat-energy-pro-index-mobile@2x.png 2x" width="280" height="270" alt="Питание Cat Energy">
+        </picture>
+        <button class="intro__button button button--bigger-words" type="button">Подобрать программу</button>
+      </div>
     </section>
     <!-- CATALOGS VARIATIONS -->
     <section class="catalogs">
       <h2 class="visually-hidden">Выбор каталога</h2>
       <article class="catalogs__card catalog-card catalog-card--slim">
-        <h3 class="catalog-card__title text-offset-reset">похудение</h3>
-        <p class="catalog-card__description text-offset-reset">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+        <h3 class="catalog-card__title catalog-card__title--slim text-offset-reset">похудение</h3>
+        <p class="catalog-card__description catalog-card__description--slim text-offset-reset">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
           Пора на диету! Cat
           Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a class="catalog-card__link" href="#">каталог slim</a>
+        <a class="catalog-card__link catalog-card__link--slim" href="#">каталог slim</a>
       </article>
       <article class="catalogs__card catalog-card catalog-card--pro">
-        <h3 class="catalog-card__title text-offset-reset">набор массы</h3>
-        <p class="catalog-card__description text-offset-reset">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
+        <h3 class="catalog-card__title catalog-card__title--pro text-offset-reset">набор массы</h3>
+        <p class="catalog-card__description catalog-card__description--pro text-offset-reset">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
           Pro поможет вашему коту
           нарастить необходимые мышцы!</p>
-        <a class="catalog-card__link" href="#">каталог pro</a>
+        <a class="catalog-card__link catalog-card__link--pro" href="#">каталог pro</a>
       </article>
     </section>
     <!-- ABOUT -->
@@ -83,12 +85,12 @@
       <h2 class="about__title text-offset-reset">Как это работает</h2>
       <ul class="about__list list-style-reset">
         <li class="about__item about__item--composition">
-          <p class="about__description text-offset-reset">Функциональное питание
-            содержит только полезные
+          <p class="about__description text-offset-reset">Функциональное питание<br>
+            содержит только полезные<br>
             питательные вещества.</p>
         </li>
         <li class="about__item about__item--cooking">
-          <p class="about__description text-offset-reset">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          <p class="about__description text-offset-reset">Выпускается в виде порошка,<br> который нужно лишь залить<br> кипятком и готово.</p>
         </li>
         <li class="about__item about__item--replace">
           <p class="about__description text-offset-reset">Замените один-два приема обычной еды на наше функциональное питание.</p>
@@ -100,33 +102,35 @@
     </section>
     <!-- STATISTICS -->
     <section class="statistic">
-      <h2 class="statistic__title text-offset-reset">Живой пример</h2>
-      <p class="statistic__text text-offset-reset">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный
-        результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-      </p>
-      <ul class="statistic__list list-style-reset">
-        <li class="statistic__item">
-          <span class="statistic__number">5 КГ</span>
-          <span class="statistic__description">снижение веса</span>
-        </li>
-        <li class="statistic__item">
-          <span class="statistic__number">60 ДНЕЙ</span>
-          <span class="statistic__description">затрачено времени</span>
-        </li>
-      </ul>
-      <p class="statistic__price text-offset-reset">Затраты на питание:15 000 РУБ.</p>
-      <picture>
-        <source type="image/png" media="(min-width: 768px)" srcset="images/index/fat-cat-tablet@1x.png 1x, images/index/fat-cat-tablet@2x.png 2x" width="560" height="512">
-        <img class="statistic__image" src="images/index/fat-cat-mobile@1x.png" srcset="images/index/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот до Cat Energy">
-      </picture>
-      <button class="statistic__slider button button--slider" type="button">
-        <span class="visually-hidden">Бегунок сравнения</span>
-      </button>
-      <picture>
-        <source type="image/png" media="(min-width: 768px)" srcset="images/index/slim-cat-tablet@1x.png 1x, images/index/slim-cat-tablet@2x.png 2x" width="560" height="512">
-        <img class="statistic__image" src="images/index/slim-cat-mobile@1x.png" srcset="images/index/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот после Cat Energy">
-      </picture>
+      <div class="statistic__wrap">
+        <h2 class="statistic__title text-offset-reset">Живой пример</h2>
+        <p class="statistic__text text-offset-reset">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+          Отличный
+          результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <ul class="statistic__list list-style-reset">
+          <li class="statistic__item">
+            <span class="statistic__number">5 КГ</span>
+            <span class="statistic__description">снижение веса</span>
+          </li>
+          <li class="statistic__item">
+            <span class="statistic__number">60 ДНЕЙ</span>
+            <span class="statistic__description">затрачено времени</span>
+          </li>
+        </ul>
+        <p class="statistic__price text-offset-reset">Затраты на питание:15 000 РУБ.</p>
+        <picture>
+          <source type="image/png" media="(min-width: 768px)" srcset="images/index/fat-cat-tablet@1x.png 1x, images/index/fat-cat-tablet@2x.png 2x" width="560" height="512">
+          <img class="statistic__image" src="images/index/fat-cat-mobile@1x.png" srcset="images/index/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот до Cat Energy">
+        </picture>
+        <button class="statistic__slider button button--slider" type="button">
+          <span class="visually-hidden">Бегунок сравнения</span>
+        </button>
+        <picture>
+          <source type="image/png" media="(min-width: 768px)" srcset="images/index/slim-cat-tablet@1x.png 1x, images/index/slim-cat-tablet@2x.png 2x" width="560" height="512">
+          <img class="statistic__image" src="images/index/slim-cat-mobile@1x.png" srcset="images/index/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот после Cat Energy">
+        </picture>
+      </div>
     </section>
     <!-- CONTACTS -->
     <section class="contacts">
@@ -149,33 +153,35 @@
   </main>
   <!-- FOOTER -->
   <footer class="footer">
-    <a class="footer__logo logo" href="index.html">
-      <picture>
-        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-mobile.svg" width="128" height="24">
-        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-mobile.svg" width="128" height="24">
-        <img class="logo__image logo__image--text" src="images/logo-text-mobile.svg" width="128" height="24" alt="Текстовый логотип Cat Energy">
-      </picture>
-    </a>
-    <ul class="footer__list social-list list-style-reset">
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--vk" href="https://vk.com/htmlacademy">
-          <span class="visually-hidden">Мы в Вконтакте</span>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--yt" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">Мы в Youtube</span>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--tg" href="https://t.me/htmlacademy">
-          <span class="visually-hidden">Мы в Telegram</span>
-        </a>
-      </li>
-    </ul>
-    <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
-      <span class="copyright__title">HTML Academy</span>
-    </a>
+    <div class="footer__wrap">
+      <a class="footer__logo logo" href="index.html">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-mobile.svg" width="128" height="24">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-mobile.svg" width="128" height="24">
+          <img class="logo__image logo__image--text" src="images/logo-text-mobile.svg" width="128" height="24" alt="Текстовый логотип Cat Energy">
+        </picture>
+      </a>
+      <ul class="footer__list social-list list-style-reset">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--vk" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--yt" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы в Youtube</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--tg" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в Telegram</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__title">HTML Academy</span>
+      </a>
+    </div>
   </footer>
 </body>
 

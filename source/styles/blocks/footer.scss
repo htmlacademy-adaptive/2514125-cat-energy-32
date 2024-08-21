@@ -5,7 +5,7 @@
   background-color: $section-bg-color;
 
   @media (min-width: $tablet-width) {
-    @include flex (row, space-between, center);
+    display: block;
     height: 147px;
     padding: 55px 30px;
   }
@@ -13,6 +13,20 @@
   @media (min-width: $desktop-width) {
     height: 169px;
     padding: 66px 110px;
+  }
+}
+
+.footer__wrap {
+  @include flex (column, space-between, center);
+
+  @media (min-width: $tablet-width) {
+    @include flex (row, space-between, center);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include flex (row, space-between, center);
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 

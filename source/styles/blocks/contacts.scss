@@ -4,6 +4,7 @@
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
+    width: 565px;
     height: 200px;
     padding: 60px 70px;
   }
@@ -43,6 +44,11 @@
   @media (min-width: $desktop-width) {
     line-height: 20px;
   }
+}
+
+.contacts__map {
+  display: block;
+  width: 100%;
 }
 
 .contacts--gray-bg {
