@@ -1,63 +1,94 @@
 .catalog-card {
   position: relative;
-  width: 280px;
+  min-width: 280px;
   background-color: $section-bg-color;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    min-width: 708px;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
   }
+}
 
-  &--slim {
-    &::before {
-      @include pseudo (36px, 50px);
-      background-image: url("../../icons/index/cat-slim-icon-mobile.svg");
-      background-repeat: no-repeat;
-      background-size: auto;
-      position: absolute;
-      z-index: 2;
-      top: 21px;
-      left: 27px;
-    }
-
-    &::after {
-      @include pseudo (50px, 50px);
-      background-color: $base-bg-green;
-      border-radius: 50%;
-      position: absolute;
-      z-index: 1;
-      top: 24px;
-      left: 20px;
-    }
+.catalog-card--slim {
+  &::before {
+    @include pseudo (36px, 50px);
+    background-image: url("../../icons/index/cat-slim-icon-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: absolute;
+    z-index: 2;
+    top: 21px;
+    left: 27px;
   }
 
-  &--pro {
+  &::after {
+    @include pseudo (50px, 50px);
+    background-color: $base-bg-green;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 24px;
+    left: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
     &::before {
-      @include pseudo (67px, 28px);
-      background-image: url("../../icons/index/cat-pro-icon-mobile.svg");
-      background-repeat: no-repeat;
-      background-size: 100%;
-      position: absolute;
-      z-index: 2;
-      top: 35px;
-      left: 12px;
+      width: 140px;
+      height: 194px;
+      top: 55px;
+      left: 68%;
     }
 
     &::after {
-      @include pseudo (50px, 50px);
-      background-color: $base-bg-green;
-      border-radius: 50%;
-      position: absolute;
-      z-index: 1;
-      top: 24px;
-      left: 21px;
+      width: 200px;
+      height: 200px;
+      top: 75px;
+      left: 65%;
     }
   }
 }
 
+.catalog-card--pro {
+  &::before {
+    @include pseudo (67px, 28px);
+    background-image: url("../../icons/index/cat-pro-icon-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 35px;
+    left: 12px;
+  }
+
+  &::after {
+    @include pseudo (50px, 50px);
+    background-color: $base-bg-green;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 24px;
+    left: 21px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 268px;
+      height: 112px;
+      top: 125px;
+      left: 60%;
+    }
+
+    &::after {
+      width: 200px;
+      height: 200px;
+      top: 75px;
+      left: 65%;
+    }
+  }
+}
 
 .catalog-card__title {
   font-family: $secondary-font;
@@ -79,22 +110,41 @@
     line-height: 36px;
     text-align: center;
   }
+}
 
-  &--slim {
-    padding: 30px 80px 29px 90px;
-  }
+.catalog-card__title--slim {
+  margin-bottom: 29px;
+  padding: 30px 0 0 15px;
 
-  &--pro {
-    padding: 30px 52px 29px 91px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    padding: 77px 0 0 53px;
   }
+}
+
+.catalog-card__title--pro {
+  margin-bottom: 29px;
+  padding: 30px 52px 0 91px;
 }
 
 .catalog-card__description {
+  margin-bottom: 38px;
+  padding: 0 33px 0 20px;
   color: $base-color-text-black;
-  padding: 0 33px 38px 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 48%;
+    margin-bottom: 48px;
+    padding: 0;
+    padding-left: 52px;
+  }
 }
 
 .catalog-card__link {
+  display: block;
+  max-width: 134px;
+  margin-bottom: 22px;
+  padding-left: 20px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
@@ -103,6 +153,8 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
+    max-width: 165px;
+    padding-left: 52px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -121,24 +173,6 @@
     position: absolute;
   }
 
-  &--slim {
-    padding: 0 126px 22px 20px;
-
-    &::after {
-      top: 6px;
-      left: 102px;
-    }
-  }
-
-  &--pro {
-    padding: 0 177px 22px 20px;
-
-    &::after {
-      top: 6px;
-      left: 98px;
-    }
-  }
-
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -146,5 +180,33 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.catalog-card__link--slim {
+  &::after {
+    top: 6px;
+    left: 102px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      top: 11px;
+      left: 160px;
+    }
+  }
+}
+
+.catalog-card__link--pro {
+  &::after {
+    top: 6px;
+    left: 98px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      top: 11px;
+      left: 160px;
+    }
   }
 }

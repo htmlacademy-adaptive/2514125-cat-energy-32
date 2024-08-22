@@ -1,7 +1,4 @@
 .footer {
-  @include flex (column, space-between, center);
-  height: 240px;
-  padding: 40px 20px;
   background-color: $section-bg-color;
 
   @media (min-width: $tablet-width) {
@@ -18,6 +15,7 @@
 
 .footer__wrap {
   @include flex (column, space-between, center);
+  padding: 40px 20px;
 
   @media (min-width: $tablet-width) {
     @include flex (row, space-between, center);

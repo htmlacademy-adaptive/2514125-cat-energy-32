@@ -3,10 +3,11 @@
 
   &--open {
     background-color: $page-bg-color;
-    width: inherit;
     display: block;
     position: absolute;
-    z-index: 1;
+    z-index: 3;
+    left: 0;
+    right: 0;
   }
 
   @media (min-width: $tablet-width) {

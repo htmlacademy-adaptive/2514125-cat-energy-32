@@ -1,5 +1,9 @@
 .logo {
-  height: 38px;
+  min-height: 38px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 50px;
+  }
 
   &:hover,
   &:focus {

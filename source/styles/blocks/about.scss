@@ -1,7 +1,9 @@
 .about {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 49px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-bottom: 49px;
+  padding: 0 20px;
   position: relative;
 
   @media (min-width: $tablet-width) {
