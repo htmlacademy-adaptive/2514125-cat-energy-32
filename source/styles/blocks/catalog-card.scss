@@ -1,6 +1,6 @@
 .catalog-card {
   position: relative;
-  min-width: 280px;
+  width: 100%;
   background-color: $section-bg-color;
 
   @media (min-width: $tablet-width) {
@@ -8,7 +8,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 570px;
+    min-width: 570px;
+    max-width: 570px;
   }
 }
 
@@ -47,6 +48,22 @@
       height: 200px;
       top: 75px;
       left: 65%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 70px;
+      height: 97px;
+      top: 40px;
+      left: 13%;
+    }
+
+    &::after {
+      width: 100px;
+      height: 100px;
+      top: 45px;
+      left: 10%;
     }
   }
 }
@@ -88,9 +105,26 @@
       left: 65%;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 134px;
+      height: 56px;
+      top: 65px;
+      left: 7%;
+    }
+
+    &::after {
+      width: 100px;
+      height: 100px;
+      top: 45px;
+      left: 10%;
+    }
+  }
 }
 
 .catalog-card__title {
+  margin-bottom: 29px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 37px;
@@ -113,21 +147,29 @@
 }
 
 .catalog-card__title--slim {
-  margin-bottom: 29px;
   padding: 30px 80px 0 90px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
     padding: 77px 150px 0 53px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 192px 0 214px;
+    margin-bottom: 73px;
+  }
 }
 
 .catalog-card__title--pro {
-  margin-bottom: 29px;
   padding: 30px 52px 0 91px;
 
   @media (min-width: $tablet-width) {
     padding: 77px 240px 0 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 150px 0 214px;
+    margin-bottom: 73px;
   }
 }
 
@@ -141,6 +183,12 @@
     margin-bottom: 48px;
     padding: 0;
     padding-left: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    padding: 0 56px 0 52px;
+    margin-bottom: 23px;
   }
 }
 
@@ -196,7 +244,14 @@
   @media (min-width: $tablet-width) {
     &::after {
       top: 11px;
-      left: 160px;
+      left: 105%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: 11px;
+      left: 105%;
     }
   }
 }
@@ -210,7 +265,14 @@
   @media (min-width: $tablet-width) {
     &::after {
       top: 11px;
-      left: 160px;
+      left: 105%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: 11px;
+      left: 105%;
     }
   }
 }

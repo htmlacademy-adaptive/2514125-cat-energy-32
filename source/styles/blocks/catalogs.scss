@@ -13,8 +13,8 @@
   @media (min-width: $desktop-width) {
     @include flex (row, space-between, center);
     max-width: 1440px;
-    margin: 0 auto;
-    padding: 82px 110px 71px;
+    margin-bottom: 71px;
+    padding: 0 110px;
   }
 }
 
