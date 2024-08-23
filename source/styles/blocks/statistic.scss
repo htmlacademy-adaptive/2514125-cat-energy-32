@@ -3,7 +3,8 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 30px 101px;
+    padding: 0 30px 101px;
+    background: linear-gradient(to bottom, ($page-bg-color 60%, #eaeaea 60%));
   }
 
   @media (min-width: $desktop-width) {
@@ -13,6 +14,10 @@
 
 .statistic__wrap {
   @include flex (column, space-between, center);
+
+  @media (min-width: $tablet-width) {
+    @include flex (column, space-between, flex-start);
+  }
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
@@ -54,13 +59,14 @@
 
 .statistic__list {
   @include flex (row, space-between, center);
+  flex-wrap: wrap;
   column-gap: 32px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     @include flex (row, start, center);
-    margin: 0;
     width: 367px;
+    margin: 0 0 50px;
     column-gap: 43px;
   }
 }
@@ -68,12 +74,14 @@
 .statistic__item {
   @include flex (column, space-between, center);
   min-width: 124px;
+  padding-top: 10px;
   border: 1px solid #d9d9d9;
   border-radius: 3px;
 
   @media (min-width: $tablet-width) {
     @include flex (column, space-between, center);
-    min-width: 162px;
+    width: 162px;
+    padding-top: 15px;
   }
 }
 
@@ -97,15 +105,20 @@
 }
 
 .statistic__description {
+  padding: 0 10px;
   font-size: 12px;
   line-height: 12px;
-  position: relative;
-  top: 5px;
   background-color: #eaeaea;
+  text-align: center;
+  position: relative;
+  top: 10px;
 
   @media (min-width: $tablet-width) {
+    padding: 0 5px;
     font-size: 14px;
     line-height: 14px;
+    background-color: $page-bg-color;
+    top: 6px;
   }
 
   @media (min-width: $desktop-width) {
@@ -123,8 +136,13 @@
   color: $sec-color-text-black;
 
   @media (min-width: $tablet-width) {
+    display: block;
     font-size: 20px;
     line-height: 20px;
+    align-self: flex-end;
+    text-align: end;
+    position: relative;
+    top: -110px;
   }
 
   @media (min-width: $desktop-width) {

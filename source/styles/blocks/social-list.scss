@@ -1,6 +1,6 @@
 .social-list {
   @include flex (row, space-between, center);
-  min-width: 280px;
+  width: 280px;
   padding: 20px 0;
   flex-wrap: wrap;
   position: relative;

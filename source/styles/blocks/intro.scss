@@ -22,10 +22,11 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
     background-color: $page-bg-color;
     background-image: none;
     color: $sec-color-text-black;
-    padding: 0;
 
     &::before {
       display: none;
@@ -87,7 +88,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
-    padding-left: 90px;
+    padding: 0 0 0 90px;
     font-size: 20px;
     line-height: 20px;
     z-index: 2;
