@@ -1,8 +1,13 @@
+.catalog {
+  padding: 0 20px;
+}
+
 .catalog__title {
+  margin-bottom: 41px;
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
-  font-weight: 700;
+  font-weight: 400;
   color: $sec-color-text-black;
 
   @media (min-width: $tablet-width) {
@@ -14,4 +19,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+}
+
+.catalog__list {
+  @include flex (column, space-between, center);
+  margin-bottom: 26px;
+  text-align: center;
 }

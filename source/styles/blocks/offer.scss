@@ -1,17 +1,44 @@
 .offer {
-  background-color: rgba(104, 183, 56, 0.85);
+  @include flex (column, flex-end, center);
+  min-width: 280px;
+  min-height: 290px;
+  margin-bottom: 40px;
+  padding: 43px 0;
+  background-image: url("../../images/catalog/catalog-offer-bg-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
 
   &::before {
     @include pseudo(78px, 80px);
     background-image: url("../../icons/catalog/gift-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    z-index: 3;
+  }
+
+  &::after {
+    @include pseudo (100%, 100%);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    position: absolute;
+    background-color: rgba(104, 183, 56, 0.85);
   }
 }
 
 .offer__text {
+  padding: 0 61px 0 58px;
+  position: relative;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   color: $sec-color-text-white;
+  text-align: center;
+  z-index: 3;
 }

@@ -32,6 +32,7 @@
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
   color: $sec-color-text-black;
 
   @media (min-width: $tablet-width) {
@@ -64,7 +65,7 @@
   @include flex (row, space-between, center);
   flex-wrap: wrap;
   column-gap: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     @include flex (row, start, center);
@@ -74,7 +75,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 60px;
   }
 }
 

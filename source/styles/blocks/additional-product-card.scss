@@ -1,4 +1,7 @@
 .additional-product-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 13px;
   line-height: 14px;
 
   @media (min-width: $tablet-width) {
@@ -10,13 +13,18 @@
   }
 }
 
+.additional-products__list {
+  margin-bottom: 35px;
+}
+
 .additional-product-card__title {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   color: #222222;
+  grid-column: 1/2;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -27,4 +35,19 @@
     font-size: 20px;
     line-height: 20px;
   }
+}
+
+.additional-product-card__amount {
+  grid-column: 1/2;
+}
+
+.additional-product-card__price {
+  text-align: end;
+  grid-column: 2/3;
+}
+
+.additional-product-card__button {
+  margin-top: 2px;
+  padding: 10px 109px;
+  grid-column: 1/-1;
 }

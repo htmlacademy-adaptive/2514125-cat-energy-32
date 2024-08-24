@@ -50,7 +50,7 @@
     color: $sec-color-text-black;
     display: grid;
     grid-template-columns: 1fr;
-    padding-bottom: 626px;
+    padding-bottom: 443px;
     padding-left: 30px;
     padding-right: 30px;
     text-align: start;
@@ -111,8 +111,8 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 290px;
-    left: 85px;
+    top: 265px;
+    left: 30px;
     z-index: 1;
   }
 

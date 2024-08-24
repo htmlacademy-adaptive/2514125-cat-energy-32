@@ -1,9 +1,16 @@
+.subscription {
+  @include flex (column, space-between, center);
+  padding: 0 20px;
+}
+
 .subscription__title {
+  margin-bottom: 32px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 400;
   color: $sec-color-text-black;
+  align-self: flex-start;
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
@@ -17,10 +24,12 @@
 }
 
 .subscription__text {
+  margin-bottom: 24px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 24px;
   color: $sec-color-text-black;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
@@ -31,4 +40,22 @@
     font-size: 24px;
     line-height: 32px;
   }
+}
+
+.subscription__input {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 13px;
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 30px;
+  color: $base-color-text-black;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+}
+
+.subscription__button {
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 15px 81px;
 }
