@@ -8,7 +8,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px 75px;
+    padding: 0 0 75px;
+    background: linear-gradient(to bottom, ($page-bg-color 10%, #eaeaea 10%));
   }
 }
 
@@ -21,6 +22,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
+    padding: 0 110px;
     margin: 0 auto;
   }
 }
@@ -53,6 +55,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 36%;
     margin-bottom: 69px;
   }
 }
@@ -66,8 +69,12 @@
   @media (min-width: $tablet-width) {
     @include flex (row, start, center);
     width: 367px;
-    margin: 0 0 50px;
+    margin-bottom: 50px;
     column-gap: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
   }
 }
 
@@ -122,6 +129,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
     font-size: 14px;
     line-height: 14px;
   }
@@ -146,7 +154,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: static;
     font-size: 20px;
     line-height: 20px;
+    align-self: flex-start;
   }
 }

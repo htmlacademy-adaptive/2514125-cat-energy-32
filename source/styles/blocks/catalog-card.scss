@@ -237,8 +237,8 @@
 
 .catalog-card__link--slim {
   &::after {
-    top: 6px;
-    left: 102px;
+    top: 3px;
+    left: 85%;
   }
 
   @media (min-width: $tablet-width) {
@@ -258,8 +258,8 @@
 
 .catalog-card__link--pro {
   &::after {
-    top: 6px;
-    left: 98px;
+    top: 3px;
+    left: 85%;
   }
 
   @media (min-width: $tablet-width) {
