@@ -15,46 +15,88 @@
 }
 
 .main-nav__toggle {
-  &--menu-open {
-    width: 24px;
-    height: 24px;
-    mask-image: url("../../icons/menu-options-icon-mobile.svg");
-    mask-repeat: no-repeat;
-    mask-size: 100%;
-    mask-position: center;
-    background-color: $sec-color-text-black;
-    position: relative;
-    left: 90%;
-    top: -30px;
-  }
-
-
-  &--close-menu {
-    width: 18px;
-    height: 18px;
-    mask-image: url("../../icons/cross-navmenu-mobile.svg");
-    mask-repeat: no-repeat;
-    mask-size: 100%;
-    mask-position: center;
-    background-color: $sec-color-text-black;
-    position: relative;
-    left: 90%;
-    top: -30px;
-  }
-
-  &:hover,
-  &:focus {
-    background-color: $sec-color-text-black;
-    opacity: 0.6;
-  }
-
-  &:active {
-    background-color: $sec-color-text-black;
-    opacity: 0.3;
-  }
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  position: absolute;
+  top: 19px;
+  left: 85%;
+  right: 0;
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
+.main-nav--closed .main-nav__toggle::before {
+  @include pseudo (24px, 2px);
+  position: absolute;
+  top: 14%;
+  left: 0;
+  background-color: $sec-color-text-black;
+  box-shadow: 0 8px 0 0 $sec-color-text-black, 0 16px 0 0 $sec-color-text-black;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before,
+.main-nav--closed .main-nav__toggle:focus::before {
+  fill: $sec-color-text-black;
+  opacity: 0.6;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  fill: $sec-color-text-black;
+  opacity: 0.3;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 17px;
+  left: 85%;
+  right: 0;
+
+  &::before,
+  &::after {
+    @include pseudo (24px, 2px);
+    position: absolute;
+    left: 0;
+    top: 45%;
+    background-color: $sec-color-text-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    box-shadow: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle:hover::before,
+.main-nav--opened .main-nav__toggle:hover::after,
+.main-nav--opened .main-nav__toggle:focus::before,
+.main-nav--opened .main-nav__toggle:focus::after {
+  fill: $sec-color-text-black;
+  opacity: 0.6;
+}
+
+.main-nav--opened .main-nav__toggle:active::before,
+.main-nav--opened .main-nav__toggle:active::after {
+  fill: $sec-color-text-black;
+  opacity: 0.3;
+}
+
+.main-nav--nojs {
+  position: static;
+  min-height: 0;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .site-list {
+  display: block;
+}

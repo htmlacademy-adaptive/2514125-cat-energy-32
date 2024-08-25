@@ -1,13 +1,17 @@
 .header {
+  @include flex (row, space-between, center);
   width: 100%;
+  min-height: 65px;
   padding: 0 20px;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  align-items: center;
+  flex-wrap: wrap;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    @include flex (row, space-between, center);
+    flex-wrap: nowrap;
     padding-top: 25px;
     padding-left: 30px;
     padding-right: 30px;
