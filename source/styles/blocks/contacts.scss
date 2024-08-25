@@ -12,7 +12,7 @@
 
   @media (min-width: $tablet-width) {
     min-width: 708px;
-    padding: 60px 40px;
+    padding: 61px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,7 +71,7 @@
 
 .contacts__text--street {
   @media (min-width: $tablet-width) {
-    min-width: 163px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: flex-end;
   }
@@ -79,7 +79,6 @@
 
 .contacts__text--town {
   @media (min-width: $tablet-width) {
-    min-width: 163px;
     display: flex;
     justify-content: flex-end;
   }

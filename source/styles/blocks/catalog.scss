@@ -1,5 +1,11 @@
 .catalog {
+  margin-bottom: 26px;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 74px;
+    padding: 0 30px;
+  }
 }
 
 .catalog__title {
@@ -11,6 +17,7 @@
   color: $sec-color-text-black;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 84px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -23,6 +30,11 @@
 
 .catalog__list {
   @include flex (column, space-between, center);
-  margin-bottom: 26px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
 }

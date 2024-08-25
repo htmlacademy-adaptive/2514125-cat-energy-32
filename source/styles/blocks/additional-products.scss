@@ -1,5 +1,9 @@
 .additional-products {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 }
 
 .additional-products__title {
@@ -11,6 +15,7 @@
   color: $sec-color-text-black;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 80px 40px;
     font-size: 32px;
     line-height: 32px;
   }
@@ -21,7 +26,25 @@
   }
 }
 
+.additional-products__list {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+    border: 1px solid #cdcdcd;
+  }
+}
+
 .additional-products__item {
   margin-bottom: 19px;
   padding-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 26px 38px 28px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
 }
