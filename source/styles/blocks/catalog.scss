@@ -1,10 +1,14 @@
 .catalog {
-  margin-bottom: 26px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 74px;
     padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
   }
 }
 
@@ -30,11 +34,19 @@
 
 .catalog__list {
   @include flex (column, space-between, center);
+  margin-bottom: 26px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 74px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 63px 80px;
   }
 }

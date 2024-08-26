@@ -18,6 +18,10 @@
     background: linear-gradient(to bottom, (rgba(104, 183, 56, 0.85) 63%, $page-bg-color 63%));
   }
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/index/index-background-cat-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-bottom: 82px;
@@ -38,6 +42,10 @@
     background-position: center, right;
     background-repeat: repeat, no-repeat;
     background-size: auto, contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, $page-bg-color 50%, rgba(104, 183, 56, 0.85) 50%), url("../../images/index/index-background-cat-desktop@2x.png");
+    }
   }
 }
 

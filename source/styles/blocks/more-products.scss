@@ -26,6 +26,11 @@
       left: 40%;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 99px;
+    padding: 139px 37px 40px;
+  }
 }
 
 .more-products__lead-text {
@@ -45,6 +50,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
+    padding: 0;
     font-size: 20px;
     line-height: 24px;
   }
@@ -63,6 +70,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
+    padding: 0;
     font-size: 16px;
     line-height: 18px;
   }
@@ -74,5 +83,9 @@
 
   @media (min-width: $tablet-width) {
     padding: 10px 71px 10px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 38px;
   }
 }
