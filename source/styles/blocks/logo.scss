@@ -1,4 +1,11 @@
 .logo {
+  min-height: 38px;
+  padding: 13px 0 15px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 50px;
+  }
+
   &:hover,
   &:focus {
     opacity: 0.8;
@@ -6,5 +13,13 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+.logo__image--icon {
+  margin-right: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
   }
 }

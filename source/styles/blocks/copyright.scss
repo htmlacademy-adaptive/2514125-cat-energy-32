@@ -1,4 +1,17 @@
 .copyright {
+  @include flex (row, space-between, center);
+  width: 280px;
+  padding: 20px 0 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+  }
+
   &::before {
     @include pseudo(27px, 34px);
     mask-image: url("../../icons/social/html-academy-logo.svg");
@@ -24,4 +37,5 @@
   font-size: 16px;
   line-height: 20px;
   color: $base-color-text-black;
+  order: -1;
 }

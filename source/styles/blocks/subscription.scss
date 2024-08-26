@@ -1,28 +1,50 @@
+.subscription {
+  @include flex (column, space-between, center);
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
+  }
+}
+
 .subscription__title {
+  margin-bottom: 32px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 400;
   color: $sec-color-text-black;
+  align-self: flex-start;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 66px 40px;
     font-size: 32px;
     line-height: 32px;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 0 72px;
     font-size: 40px;
     line-height: 40px;
   }
 }
 
 .subscription__text {
+  margin-bottom: 24px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 24px;
   color: $sec-color-text-black;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
+    padding: 0 38px;
     font-size: 24px;
     line-height: 32px;
   }
@@ -30,5 +52,56 @@
   @media (min-width: $desktop-width) {
     font-size: 24px;
     line-height: 32px;
+  }
+}
+
+.subscription__form {
+  @media (min-width: $tablet-width) {
+    @include flex (row, flex-start, center);
+    width: 100%;
+    margin-bottom: 80px;
+    padding: 0 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 104px;
+    padding: 0 234px;
+  }
+}
+
+.subscription__input {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 13px;
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 30px;
+  color: $base-color-text-black;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    width: 60%;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
+  }
+}
+
+.subscription__button {
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 15px 81px;
+
+  @media (min-width: $tablet-width) {
+    width: 40%;
+    margin: 0;
+    padding: 16px 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 256px;
   }
 }

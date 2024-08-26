@@ -1,43 +1,91 @@
 .more-products {
+  @include flex (column, space-between, center);
+  width: 100%;
+  padding: 78px 0 24px;
+  position: relative;
+
   &::before {
     @include pseudo(30px, 30px);
     background-image: url("../../icons/catalog/catalog-plus-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    position: absolute;
+    top: 25px;
+    left: 40%;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $section-bg-color;
+    margin-top: 99px;
+    padding: 160px 37px 40px;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      top: 10%;
+      left: 40%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 99px;
+    padding: 139px 37px 40px;
   }
 }
 
 .more-products__lead-text {
+  margin-bottom: 8px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   color: $sec-color-text-black;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+    padding: 0 35px;
     font-size: 20px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
+    padding: 0;
     font-size: 20px;
     line-height: 24px;
   }
 }
 
 .more-products__text {
+  margin-bottom: 21px;
   font-size: 12px;
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 82px;
+    padding: 0 40px;
     font-size: 16px;
     line-height: 18px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
+    padding: 0;
     font-size: 16px;
     line-height: 18px;
+  }
+}
+
+.more-products__button {
+  width: 100%;
+  padding: 10px 95px 10px 94px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 71px 10px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 38px;
   }
 }

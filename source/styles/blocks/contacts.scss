@@ -1,12 +1,39 @@
+.contacts {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.contacts__container {
+  @include flex (row, space-between, center);
+  padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+    padding: 61px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 565px;
+    background-color: $page-bg-color;
+    position: absolute;
+    top: 24%;
+    left: 110px;
+  }
+}
+
 .contacts__message {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   color: $contacts-message-color;
 
   @media (min-width: $tablet-width) {
+    min-height: 80px;
     font-size: 20px;
     line-height: 26px;
   }
@@ -22,7 +49,10 @@
   font-style: normal;
 
   @media (min-width: $tablet-width) {
+    @include flex (column, space-between, flex-end);
+    min-width: 157px;
     line-height: 20px;
+    text-align: end;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,6 +60,26 @@
   }
 }
 
+.contacts__map {
+  display: block;
+  width: 100%;
+}
+
 .contacts--gray-bg {
   background-color: $section-bg-color;
+}
+
+.contacts__text--street {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.contacts__text--town {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+  }
 }

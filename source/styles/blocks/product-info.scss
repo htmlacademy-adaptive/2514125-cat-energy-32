@@ -1,10 +1,19 @@
 .product-info {
+  @include flex (row, space-between, center);
+  width: 100%;
+  flex-wrap: wrap;
   font-size: 12px;
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
     font-size: 16px;
     line-height: 20px;
+    border-bottom: 1px solid #cdcdcd;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 
   @media (min-width: $desktop-width) {

@@ -1,21 +1,95 @@
 .statistic {
-  background-color: $section-bg-color;
+  padding: 25px 20px 40px;
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 101px;
+    background: linear-gradient(to bottom, ($page-bg-color 60%, #eaeaea 60%));
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 75px;
+    background: linear-gradient(to bottom, ($page-bg-color 10%, #eaeaea 10%));
+  }
+}
+
+.statistic__wrap {
+  @include flex (column, space-between, center);
+
+  @media (min-width: $tablet-width) {
+    @include flex (column, space-between, flex-start);
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
 }
 
 .statistic__title {
+  margin-bottom: 40px;
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
   color: $sec-color-text-black;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
     font-size: 60px;
     line-height: 60px;
+  }
+}
+
+.statistic__text {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 36%;
+    margin-bottom: 69px;
+  }
+}
+
+.statistic__list {
+  @include flex (row, space-between, center);
+  flex-wrap: wrap;
+  column-gap: 32px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    @include flex (row, start, center);
+    width: 367px;
+    margin-bottom: 50px;
+    column-gap: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.statistic__item {
+  @include flex (column, space-between, center);
+  min-width: 124px;
+  padding-top: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    @include flex (column, space-between, center);
+    width: 162px;
+    padding-top: 15px;
   }
 }
 
@@ -23,7 +97,7 @@
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   color: $sec-color-text-black;
 
@@ -39,34 +113,51 @@
 }
 
 .statistic__description {
+  padding: 0 10px;
   font-size: 12px;
   line-height: 12px;
+  background-color: #eaeaea;
+  text-align: center;
+  position: relative;
+  top: 10px;
 
   @media (min-width: $tablet-width) {
+    padding: 0 5px;
     font-size: 14px;
     line-height: 14px;
+    background-color: $page-bg-color;
+    top: 6px;
   }
 
   @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
     font-size: 14px;
     line-height: 14px;
   }
 }
 
 .statistic__price {
+  margin-bottom: 20px;
   font-family: $secondary-font;
   line-height: 20px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   color: $sec-color-text-black;
 
   @media (min-width: $tablet-width) {
+    display: block;
     font-size: 20px;
     line-height: 20px;
+    align-self: flex-end;
+    text-align: end;
+    position: relative;
+    top: -110px;
   }
 
   @media (min-width: $desktop-width) {
+    position: static;
     font-size: 20px;
     line-height: 20px;
+    align-self: flex-start;
   }
 }

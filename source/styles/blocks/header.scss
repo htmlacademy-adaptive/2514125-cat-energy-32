@@ -1,5 +1,54 @@
 .header {
+  @include flex (row, space-between, center);
+  width: 100%;
+  min-height: 65px;
+  padding: 0 20px;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: nowrap;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 110px;
+    padding-right: 110px;
+    background-color: transparent;
+  }
+}
+
+.header--catalog {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 74px;
+  }
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  width: 192px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
 }
