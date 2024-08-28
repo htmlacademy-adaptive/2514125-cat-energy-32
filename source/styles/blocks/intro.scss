@@ -55,19 +55,17 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto;
     color: $sec-color-text-black;
     display: grid;
     grid-template-columns: 1fr;
-    padding-bottom: 443px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 30px 443px;
     text-align: start;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
-    margin: 0 auto;
-    padding-bottom: 184px;
+    padding: 114px 0 184px;
   }
 }
 
@@ -126,8 +124,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 40px;
-    left: 39%;
+    top: 145px;
+    left: 38%;
   }
 }
 

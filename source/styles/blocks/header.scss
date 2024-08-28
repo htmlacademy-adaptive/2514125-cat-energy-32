@@ -19,10 +19,35 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
-    margin: 0 auto;
     padding-left: 110px;
     padding-right: 110px;
     background-color: transparent;
+  }
+}
+
+.header .site-list__item--current {
+  @media (min-width: $tablet-width) {
+    &::after {
+      background-color: $base-bg-green;
+    }
+  }
+}
+
+.header--main {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 10;
+  }
+}
+
+.header--main .site-list__item--current {
+  @media (min-width: $desktop-width) {
+    &::after {
+      background-color: $sec-color-text-white;
+    }
   }
 }
 
@@ -35,6 +60,14 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 74px;
+  }
+}
+
+.header--catalog .site-list__item--current {
+  @media (min-width: $desktop-width) {
+    &::after {
+      background-color: $base-bg-green;
+    }
   }
 }
 

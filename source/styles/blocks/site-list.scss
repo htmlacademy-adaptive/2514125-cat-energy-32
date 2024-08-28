@@ -32,11 +32,18 @@
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0;
+    position: relative;
   }
 }
 
 .site-list__link {
   color: $sec-color-text-black;
+
+  @media (min-width: $desktop-width) {
+    &--index-desktop {
+      color: $sec-color-text-white;
+    }
+  }
 
   &:hover,
   &:focus {
@@ -45,5 +52,23 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.site-list__item--current {
+  @media (min-width: $tablet-width) {
+    &::after {
+      @include pseudo (100%, 2px);
+      position: absolute;
+      top: 34px;
+      left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: 34px;
+      left: 0;
+    }
   }
 }

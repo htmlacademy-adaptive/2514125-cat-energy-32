@@ -9,8 +9,7 @@
   background-color: $base-bg-green;
   cursor: pointer;
 
-  &--transparent-bg,
-  &--slider {
+  &--transparent-bg {
     background-color: transparent;
   }
 
@@ -65,5 +64,58 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 26px;
+  }
+}
+
+.button--slider {
+  width: 4px;
+  height: 512px;
+  background-color: $social-list-icon-color;
+  position: relative;
+  padding: 0;
+  border: none;
+  border-radius: 2px;
+  z-index: 5;
+
+  &::before {
+    @include pseudo (40px, 40px);
+    background-color: $page-bg-color;
+    border: 2px solid $social-list-icon-color;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+  }
+
+  &::after {
+    @include pseudo (24px, 18px);
+    mask-image: url("../../icons/index/arrows-button-icon.svg");
+    background-color: $social-list-icon-color;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 7;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #5eaa2f;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: #5eaa2f;
+  }
+
+  &:active,
+  &:active::after {
+    background-color: rgba(94, 170, 47, 0.6);
+  }
+
+  &:active::before {
+    border-color: rgba(94, 170, 47, 1);
   }
 }
