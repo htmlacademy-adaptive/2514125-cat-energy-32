@@ -1,9 +1,25 @@
 .about {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      @include pseudo (100%, 1px);
+      background-color: #e6e6e6;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.about__wrap {
   @include flex (column, space-between, flex-start);
   flex-wrap: wrap;
   margin-bottom: 49px;
   padding: 0 20px;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;

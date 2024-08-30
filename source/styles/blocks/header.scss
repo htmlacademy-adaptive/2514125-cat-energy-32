@@ -36,7 +36,7 @@
 .header--main {
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 0;
+    top: 35px;
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 10;
@@ -52,10 +52,20 @@
 }
 
 .header--catalog {
-  margin-bottom: 27px;
+  margin: 0 auto 27px;
+
+  &::after {
+    @include pseudo(100%, 1px);
+    background-color: #d9d9d9;
+  }
+
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
+
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {

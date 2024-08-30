@@ -21,11 +21,34 @@
   line-height: 24px;
   font-weight: 400;
   color: $sec-color-text-black;
+  position: relative;
+
+  &::after {
+    @include pseudo (34px, 2px);
+    background-color: $base-bg-green;
+    position: absolute;
+    top: 12px;
+    right: -20px;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0 0 80px 40px;
     font-size: 32px;
     line-height: 32px;
+
+    &::before {
+      @include pseudo (30px, 2px);
+      background-color: $base-bg-green;
+      position: absolute;
+      top: 16px;
+      left: -70px;
+    }
+
+    &::after {
+      width: 357px;
+      top: 16px;
+      right: -30px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -33,11 +56,25 @@
     font-size: 40px;
     line-height: 40px;
     grid-column: 1/-1;
+
+    &::before {
+      width: 70px;
+      top: 20px;
+      left: -110px;
+    }
+
+    &::after {
+      width: 914px;
+      top: 20px;
+      right: -110px;
+    }
   }
 }
 
 .additional-products__list {
   margin-bottom: 35px;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
@@ -48,15 +85,19 @@
     margin-bottom: 96px;
     grid-column: 1/4;
     border: none;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 
 .additional-products__item {
-  margin-bottom: 19px;
-  padding-top: 13px;
+  padding: 13px 0 19px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #cdcdcd;
+  }
 
   @media (min-width: $tablet-width) {
-    margin: 0;
     padding: 26px 38px 28px;
 
     &:not(:last-child) {
