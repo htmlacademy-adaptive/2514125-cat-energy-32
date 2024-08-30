@@ -27,7 +27,6 @@
   &::after {
     @include pseudo (108px, 2px);
     background-color: $base-bg-green;
-    position: absolute;
     top: 12px;
     right: -20px;
   }
@@ -40,7 +39,6 @@
     &::before {
       @include pseudo (30px, 2px);
       background-color: $base-bg-green;
-      position: absolute;
       top: 16px;
       left: -70px;
     }

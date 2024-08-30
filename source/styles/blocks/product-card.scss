@@ -6,15 +6,12 @@
   justify-content: left;
 
   @media (min-width: $tablet-width) {
-    min-width: 324px;
-
     @include flex (column, space-between, center);
     padding: 10px 37px 40px;
     background: linear-gradient(to bottom, $page-bg-color 19%, $section-bg-color 19%);
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 245px;
     width: 245px;
     padding: 10px 38px 40px;
   }

@@ -100,7 +100,6 @@
     background-image: url("../../icons/index/leaf-icon.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    position: absolute;
     top: 25%;
     left: 18px;
     z-index: 2;
@@ -109,7 +108,6 @@
   &::after {
     @include pseudo (60px, 60px);
     background-color: #68b738;
-    position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
@@ -156,7 +154,6 @@
     background-image: url("../../icons/index/glass-icon.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    position: absolute;
     top: 25%;
     left: 17px;
     z-index: 2;
@@ -165,7 +162,6 @@
   &::after {
     @include pseudo (60px, 60px);
     background-color: #68b738;
-    position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
@@ -209,7 +205,6 @@
     background-image: url("../../icons/index/eat-icon.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    position: absolute;
     top: 25%;
     left: 17px;
     z-index: 2;
@@ -218,7 +213,6 @@
   &::after {
     @include pseudo (60px, 60px);
     background-color: #68b738;
-    position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
@@ -264,7 +258,6 @@
     background-image: url("../../icons/index/scales-icon.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    position: absolute;
     top: 25%;
     left: 17px;
     z-index: 2;
@@ -273,7 +266,6 @@
   &::after {
     @include pseudo (60px, 60px);
     background-color: #68b738;
-    position: absolute;
     top: 0;
     left: 0;
     z-index: 1;

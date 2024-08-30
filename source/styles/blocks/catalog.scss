@@ -24,7 +24,6 @@
   &::after {
     @include pseudo(100%, 1px);
     background-color: #ebebeb;
-    position: absolute;
     left: 0;
     right: 0;
     bottom: -41px;
@@ -71,7 +70,6 @@
   &::after {
     @include pseudo(100%, 1px);
     background-color: #ebebeb;
-    position: absolute;
     bottom: 0;
     left: 0;
   }

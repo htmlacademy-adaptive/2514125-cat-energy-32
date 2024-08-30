@@ -21,7 +21,6 @@
     background-image: url("../../icons/index/cat-slim-icon-mobile.svg");
     background-repeat: no-repeat;
     background-size: auto;
-    position: absolute;
     z-index: 2;
     top: 21px;
     left: 27px;
@@ -31,7 +30,6 @@
     @include pseudo (50px, 50px);
     background-color: $base-bg-green;
     border-radius: 50%;
-    position: absolute;
     z-index: 1;
     top: 24px;
     left: 20px;
@@ -76,7 +74,6 @@
     background-image: url("../../icons/index/cat-pro-icon-mobile.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    position: absolute;
     z-index: 2;
     top: 35px;
     left: 12px;
@@ -86,7 +83,6 @@
     @include pseudo (50px, 50px);
     background-color: $base-bg-green;
     border-radius: 50%;
-    position: absolute;
     z-index: 1;
     top: 24px;
     left: 21px;
@@ -183,7 +179,6 @@
   &::after {
     @include pseudo (85%, 1px);
     background-color: #d9d9d9;
-    position: absolute;
     bottom: 22%;
     left: 20px;
   }
@@ -238,7 +233,6 @@
     mask-repeat: no-repeat;
     mask-size: 100%;
     background-color: #000000;
-    position: absolute;
   }
 
   &:hover,

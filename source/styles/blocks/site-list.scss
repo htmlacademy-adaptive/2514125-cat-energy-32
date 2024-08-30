@@ -59,7 +59,6 @@
   @media (min-width: $tablet-width) {
     &::after {
       @include pseudo (100%, 2px);
-      position: absolute;
       top: 34px;
       left: 0;
     }
