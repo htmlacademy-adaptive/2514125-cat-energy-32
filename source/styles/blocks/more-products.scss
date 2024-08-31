@@ -1,34 +1,51 @@
 .more-products {
   @include flex (column, space-between, center);
-  width: 100%;
-  padding: 78px 0 24px;
+  width: 100vw;
+  padding: 78px 20px 24px;
   position: relative;
 
   &::before {
-    @include pseudo(30px, 30px);
-    background-image: url("../../icons/catalog/catalog-plus-icon.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    top: 25px;
-    left: 40%;
+    @include pseudo(30px, 2px);
+    background-color: #d3d3d3;
+    top: 39px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    @include pseudo (30px, 2px);
+    background-color: #d3d3d3;
+    top: 52px;
+    left: 45%;
+    transform: rotate(90deg) translate(-50%, -50%);
   }
 
   @media (min-width: $tablet-width) {
+    width: 324px;
     border: 2px solid $section-bg-color;
     margin-top: 100px;
     padding: 176px 37px 40px;
 
     &::before {
       width: 60px;
-      height: 60px;
-      top: 10%;
-      left: 40%;
+      top: 80px;
+    }
+
+    &::after {
+      width: 60px;
+      top: 108px;
+      left: 41%;
     }
   }
 
   @media (min-width: $desktop-width) {
+    width: 245px;
     margin-top: 99px;
     padding: 139px 37px 40px;
+
+    &::after {
+      left: 38%;
+    }
   }
 }
 

@@ -13,6 +13,7 @@
 }
 
 .catalog__title {
+  width: 100vw;
   margin-bottom: 41px;
   font-family: $secondary-font;
   font-size: 36px;
@@ -30,6 +31,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: auto;
     margin-bottom: 84px;
     font-size: 60px;
     line-height: 60px;

@@ -7,6 +7,7 @@
 
   @media (min-width: $tablet-width) {
     @include flex (column, space-between, center);
+    width: 324px;
     padding: 10px 37px 40px;
     background: linear-gradient(to bottom, $page-bg-color 19%, $section-bg-color 19%);
   }
@@ -56,7 +57,7 @@
 }
 
 .product-card__link {
-  padding: 10px 36px;
+  padding: 10px 0;
   display: block;
   grid-column: 1/2;
   grid-row: 1/3;

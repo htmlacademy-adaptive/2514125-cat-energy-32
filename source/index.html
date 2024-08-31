@@ -17,35 +17,37 @@
 <body class="page__body">
   <!-- HEADER -->
   <header class="header header--main">
-    <a class="header__logo logo" href="#">
-      <picture>
-        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
-        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
-        <img class="logo__image logo__image--icon" src="/images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-      </picture>
-      <picture>
-        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-desktop.svg" width="118" height="21">
-        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101" height="18">
-        <img class="logo__image logo__image--text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Текстовый логотип Cat Energy">
-      </picture>
-    </a>
-    <!-- NAVIGATION -->
-    <nav class="header__nav main-nav main-nav--closed">
-      <button class="main-nav__toggle button button--transparent-bg" type="button">
-        <span class="visually-hidden">Переключить меню навигации</span>
-      </button>
-      <ul class="main-nav__list site-list list-style-reset">
-        <li class="site-list__item site-list__item--current">
-          <a class="site-list__link site-list__link--index-desktop" href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--index-desktop" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--index-desktop" href="#">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__wrap">
+      <a class="header__logo logo" href="#">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+          <img class="logo__image logo__image--icon" src="/images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        </picture>
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-desktop.svg" width="118" height="21">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101" height="18">
+          <img class="logo__image logo__image--text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Текстовый логотип Cat Energy">
+        </picture>
+      </a>
+      <!-- NAVIGATION -->
+      <nav class="header__nav main-nav main-nav--closed">
+        <button class="main-nav__toggle button button--transparent-bg" type="button">
+          <span class="visually-hidden">Переключить меню навигации</span>
+        </button>
+        <ul class="main-nav__list site-list list-style-reset">
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link site-list__link--index-desktop" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--index-desktop" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--index-desktop" href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <!-- MAIN -->
   <main class="main-container">

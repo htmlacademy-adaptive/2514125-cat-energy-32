@@ -20,8 +20,7 @@
   padding: 0;
   position: absolute;
   top: 19px;
-  left: 85%;
-  right: 0;
+  right: 20px;
   z-index: 10;
 
   @media (min-width: $tablet-width) {
@@ -59,14 +58,11 @@
 
 .main-nav--opened .main-nav__toggle {
   top: 17px;
-  left: 85%;
-  right: 0;
+  right: 20px;
 
   &::before,
   &::after {
     @include pseudo (24px, 2px);
-    left: 0;
-    top: 45%;
     background-color: $sec-color-text-black;
   }
 

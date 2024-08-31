@@ -1,7 +1,8 @@
 .social-list {
-  @include flex (row, space-between, center);
-  width: 280px;
+  @include flex (row, center, center);
+  width: 100%;
   padding: 20px 0;
+  gap: 10%;
   flex-wrap: wrap;
   position: relative;
   border-bottom: 1px solid #d9d9d9;
@@ -26,6 +27,7 @@
       mask-position: center;
       mask-size: 100%;
       background-color: $social-list-icon-color;
+      position: static;
     }
   }
 
@@ -37,7 +39,7 @@
       mask-position: center;
       mask-size: 100%;
       background-color: $social-list-icon-color;
-      right: 50%;
+      position: static;
     }
   }
 
@@ -49,7 +51,7 @@
       mask-position: center;
       mask-size: 100%;
       background-color: $social-list-icon-color;
-      left: 70px;
+      position: static;
     }
   }
 

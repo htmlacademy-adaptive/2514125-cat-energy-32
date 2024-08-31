@@ -17,35 +17,37 @@
 <body class="page__body">
   <!-- HEADER -->
   <header class="header header--catalog">
-    <a class="header__logo logo" href="index.html">
-      <picture>
-        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
-        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
-        <img class="logo__image logo__image--icon" src="/images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-      </picture>
-      <picture>
-        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-desktop.svg" width="118" height="21">
-        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101" height="18">
-        <img class="logo__image logo__image--text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Текстовый логотип Cat Energy">
-      </picture>
-    </a>
-    <!-- NAVIGATION -->
-    <nav class="header__nav main-nav main-nav--closed">
-      <button class="main-nav__toggle button button--transparent-bg" type="button">
-        <span class="visually-hidden">Переключить меню навигации</span>
-      </button>
-      <ul class="main-nav__list site-list list-style-reset">
-        <li class="site-list__item">
-          <a class="site-list__link" href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item site-list__item--current">
-          <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__wrap">
+      <a class="header__logo logo" href="index.html">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+          <img class="logo__image logo__image--icon" src="/images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        </picture>
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-desktop.svg" width="118" height="21">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101" height="18">
+          <img class="logo__image logo__image--text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Текстовый логотип Cat Energy">
+        </picture>
+      </a>
+      <!-- NAVIGATION -->
+      <nav class="header__nav main-nav main-nav--closed">
+        <button class="main-nav__toggle button button--transparent-bg" type="button">
+          <span class="visually-hidden">Переключить меню навигации</span>
+        </button>
+        <ul class="main-nav__list site-list list-style-reset">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <!-- MAIN -->
   <main class="main-container">
@@ -247,49 +249,53 @@
     </section>
     <!-- ADDITIONAL PRODUCTS -->
     <section class="additional-products">
-      <h2 class="additional-products__title text-offset-reset">Дополнительные товары</h2>
-      <ul class="additional-products__list list-style-reset">
-        <li class="additional-products__item additional-product-card">
-          <h3 class="additional-product-card__title text-offset-reset">Сахарозаменитель</h3>
-          <span class="additional-product-card__amount">1 упаковка (100 г)</span>
-          <span class="additional-product-card__price">200 ₽</span>
-          <a class="additional-product-card__button button" href="#">Заказать</a>
-        </li>
-        <li class="additional-products__item additional-product-card">
-          <h3 class="additional-product-card__title text-offset-reset">Питьевая вода</h3>
-          <span class="additional-product-card__amount">5 литров</span>
-          <span class="additional-product-card__price">50 ₽</span>
-          <a class="additional-product-card__button button" href="#">Заказать</a>
-        </li>
-        <li class="additional-products__item additional-product-card">
-          <h3 class="additional-product-card__title text-offset-reset">Молоко</h3>
-          <span class="additional-product-card__amount">1 литр</span>
-          <span class="additional-product-card__price">100 ₽</span>
-          <a class="additional-product-card__button button" href="#">Заказать</a>
-        </li>
-        <li class="additional-products__item additional-product-card">
-          <h3 class="additional-product-card__title text-offset-reset">Витамины</h3>
-          <span class="additional-product-card__amount">1 упаковка (30 г)</span>
-          <span class="additional-product-card__price">300 ₽</span>
-          <a class="additional-product-card__button button" href="#">Заказать</a>
-        </li>
-      </ul>
-      <!-- OFFER -->
-      <article class="offer">
-        <h3 class="offer__text text-offset-reset">Закажите все<br>
-          и получите чехол для<br>
-          кота в подарок!</h3>
-      </article>
+      <div class="additional-products__wrap">
+        <h2 class="additional-products__title text-offset-reset">Дополнительные товары</h2>
+        <ul class="additional-products__list list-style-reset">
+          <li class="additional-products__item additional-product-card">
+            <h3 class="additional-product-card__title text-offset-reset">Сахарозаменитель</h3>
+            <span class="additional-product-card__amount">1 упаковка (100 г)</span>
+            <span class="additional-product-card__price">200 ₽</span>
+            <a class="additional-product-card__button button" href="#">Заказать</a>
+          </li>
+          <li class="additional-products__item additional-product-card">
+            <h3 class="additional-product-card__title text-offset-reset">Питьевая вода</h3>
+            <span class="additional-product-card__amount">5 литров</span>
+            <span class="additional-product-card__price">50 ₽</span>
+            <a class="additional-product-card__button button" href="#">Заказать</a>
+          </li>
+          <li class="additional-products__item additional-product-card">
+            <h3 class="additional-product-card__title text-offset-reset">Молоко</h3>
+            <span class="additional-product-card__amount">1 литр</span>
+            <span class="additional-product-card__price">100 ₽</span>
+            <a class="additional-product-card__button button" href="#">Заказать</a>
+          </li>
+          <li class="additional-products__item additional-product-card">
+            <h3 class="additional-product-card__title text-offset-reset">Витамины</h3>
+            <span class="additional-product-card__amount">1 упаковка (30 г)</span>
+            <span class="additional-product-card__price">300 ₽</span>
+            <a class="additional-product-card__button button" href="#">Заказать</a>
+          </li>
+        </ul>
+        <!-- OFFER -->
+        <article class="offer">
+          <h3 class="offer__text text-offset-reset">Закажите все<br>
+            и получите чехол для<br>
+            кота в подарок!</h3>
+        </article>
+      </div>
     </section>
     <!-- SUBSCRIPTION -->
     <section class="subscription">
-      <h2 class="subscription__title text-offset-reset">Акции и новинки</h2>
-      <p class="subscription__text text-offset-reset">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-      <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="visually-hidden" for="subscription-input">Укажите ваш e-mail:</label>
-        <input class="subscription__input" type="email" name="subscription-input" id="subscription-input" placeholder="кuklachev@gmail.com" required>
-        <button class="subscription__button primary-button button button--bigger-words" type="submit">Подписаться</button>
-      </form>
+      <div class="subscription__wrap">
+        <h2 class="subscription__title text-offset-reset">Акции и новинки</h2>
+        <p class="subscription__text text-offset-reset">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+        <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="subscription-input">Укажите ваш e-mail:</label>
+          <input class="subscription__input" type="email" name="subscription-input" id="subscription-input" placeholder="кuklachev@gmail.com" required>
+          <button class="subscription__button primary-button button button--bigger-words" type="submit">Подписаться</button>
+        </form>
+      </div>
     </section>
     <!-- CONTACTS -->
     <section class="contacts contacts--gray-bg">

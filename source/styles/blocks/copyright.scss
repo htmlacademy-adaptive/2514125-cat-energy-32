@@ -1,6 +1,6 @@
 .copyright {
   @include flex (row, space-between, center);
-  width: 280px;
+  width: 100%;
   padding: 20px 0 40px;
 
   @media (min-width: $tablet-width) {
@@ -19,6 +19,7 @@
     mask-position: center;
     mask-size: 100%;
     background-color: $social-list-icon-color;
+    position: static;
   }
 
   &:hover::before,
