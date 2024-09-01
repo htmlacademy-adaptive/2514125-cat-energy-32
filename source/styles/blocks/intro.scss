@@ -46,6 +46,10 @@
       background-image: linear-gradient(to right, $page-bg-color 50%, rgba(104, 183, 56, 0.85) 50%), url("../../images/index/index-background-cat-desktop@2x.jpg");
     }
   }
+
+  @media (min-width: 1441px) {
+    background-size: auto, cover;
+  }
 }
 
 .intro__wrap {

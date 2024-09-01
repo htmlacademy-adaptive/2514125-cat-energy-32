@@ -69,7 +69,7 @@
 
 .button--slider {
   width: 4px;
-  height: 512px;
+  height: 256px;
   background-color: $social-list-icon-color;
   position: relative;
   padding: 0;
@@ -98,6 +98,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 7;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
   }
 
   &:hover::before,

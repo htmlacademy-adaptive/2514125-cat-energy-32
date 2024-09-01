@@ -2,11 +2,11 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, ($page-bg-color 60%, #eaeaea 60%));
+    background: linear-gradient(to bottom, ($page-bg-color 57%, #eaeaea 57%));
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(to bottom, ($page-bg-color 10%, #eaeaea 10%));
+    background: linear-gradient(to bottom, ($page-bg-color 22%, #eaeaea 22%));
   }
 }
 
@@ -23,6 +23,8 @@
     max-width: 1440px;
     padding: 0 110px 75px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -47,6 +49,8 @@
     padding: 0;
     font-size: 60px;
     line-height: 60px;
+    grid-column: 1/3;
+    grid-row: 1/2;
   }
 }
 
@@ -58,8 +62,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 36%;
+    width: 436px;
     margin-bottom: 69px;
+    grid-column: 1/3;
+    grid-row: 2/3;
   }
 }
 
@@ -78,6 +84,8 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 60px;
+    grid-column: 1/3;
+    grid-row: 3/4;
   }
 }
 
@@ -147,23 +155,57 @@
   color: $sec-color-text-black;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    @include flex (column, space-between, center);
     font-size: 20px;
     line-height: 20px;
     align-self: flex-end;
-    text-align: end;
+    align-items: flex-end;
     position: relative;
     top: -110px;
   }
 
   @media (min-width: $desktop-width) {
+    @include flex (row, space-between, center);
     position: static;
     font-size: 20px;
     line-height: 20px;
-    align-self: flex-start;
+    text-align: start;
+    grid-column: 1/2;
+    grid-row: 4/5;
   }
 }
 
-.statistic__image {
-  position: relative;
+.statistic__slider-wrap {
+  width: 280px;
+  height: 256px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3/-1;
+    grid-row: 1/5;
+  }
 }
+
+.statistic__image--before {
+  grid-column: 1/2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.statistic__image--after {
+  grid-column: 3/4;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+

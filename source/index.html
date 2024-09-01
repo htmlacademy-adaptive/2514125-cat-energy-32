@@ -110,30 +110,34 @@
         <h2 class="statistic__title text-offset-reset">Живой пример</h2>
         <p class="statistic__text text-offset-reset">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный
-          результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
+          результат<br class="break__desktop">без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <ul class="statistic__list list-style-reset">
           <li class="statistic__item">
             <span class="statistic__number">5 КГ</span>
-            <span class="statistic__description">снижение<br class="mobile-break"> веса</span>
+            <span class="statistic__description">снижение<br class="break__mobile"> веса</span>
           </li>
           <li class="statistic__item">
             <span class="statistic__number">60 ДНЕЙ</span>
-            <span class="statistic__description">затрачено<br class="mobile-break"> времени</span>
+            <span class="statistic__description">затрачено<br class="break__mobile"> времени</span>
           </li>
         </ul>
-        <p class="statistic__price text-offset-reset">Затраты на питание:<br class="tablet-break">15 000 РУБ.</p>
-        <picture>
-          <source type="image/png" media="(min-width: 768px)" srcset="images/index/fat-cat-tablet@1x.png 1x, images/index/fat-cat-tablet@2x.png 2x" width="560" height="512">
-          <img class="statistic__image" src="images/index/fat-cat-mobile@1x.png" srcset="images/index/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот до Cat Energy">
-        </picture>
-        <button class="statistic__slider button button--slider" type="button">
-          <span class="visually-hidden">Бегунок сравнения</span>
-        </button>
-        <picture>
-          <source type="image/png" media="(min-width: 768px)" srcset="images/index/slim-cat-tablet@1x.png 1x, images/index/slim-cat-tablet@2x.png 2x" width="560" height="512">
-          <img class="statistic__image" src="images/index/slim-cat-mobile@1x.png" srcset="images/index/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот после Cat Energy">
-        </picture>
+        <p class="statistic__price text-offset-reset">
+          <span class="statistic__price-text">Затраты на питание:</span>
+          <span class="statistic__price-number">15 000 РУБ.</span>
+        </p>
+        <div class="statistic__slider-wrap">
+          <picture>
+            <source type="image/png" media="(min-width: 768px)" srcset="images/index/fat-cat-tablet@1x.png 1x, images/index/fat-cat-tablet@2x.png 2x" width="560" height="512">
+            <img class="statistic__image statistic__image--before" src="images/index/fat-cat-mobile@1x.png" srcset="images/index/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот до Cat Energy">
+          </picture>
+          <button class="statistic__slider button button--slider" type="button">
+            <span class="visually-hidden">Бегунок сравнения</span>
+          </button>
+          <picture>
+            <source type="image/png" media="(min-width: 768px)" srcset="images/index/slim-cat-tablet@1x.png 1x, images/index/slim-cat-tablet@2x.png 2x" width="560" height="512">
+            <img class="statistic__image statistic__image--after" src="images/index/slim-cat-mobile@1x.png" srcset="images/index/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот после Cat Energy">
+          </picture>
+        </div>
       </div>
     </section>
     <!-- CONTACTS -->
