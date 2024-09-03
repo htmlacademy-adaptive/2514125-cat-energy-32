@@ -73,7 +73,7 @@
   @include flex (row, space-between, center);
   flex-wrap: wrap;
   column-gap: 32px;
-  margin-bottom: 34px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     @include flex (row, start, center);
@@ -92,7 +92,7 @@
 .statistic__item {
   @include flex (column, space-between, center);
   min-width: 124px;
-  padding-top: 10px;
+  padding-top: 13px;
   border: 1px solid #d9d9d9;
   border-radius: 3px;
 
@@ -129,7 +129,8 @@
   background-color: #eaeaea;
   text-align: center;
   position: relative;
-  top: 10px;
+  top: 9px;
+  left: -1px;
 
   @media (min-width: $tablet-width) {
     padding: 0 5px;

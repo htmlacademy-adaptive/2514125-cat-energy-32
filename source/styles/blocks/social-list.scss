@@ -1,7 +1,7 @@
 .social-list {
-  @include flex (row, center, center);
+  @include flex (row, space-between, center);
   width: 100%;
-  padding: 20px 0;
+  padding: 19px 0;
   gap: 10%;
   flex-wrap: wrap;
   position: relative;
@@ -27,31 +27,33 @@
       mask-position: center;
       mask-size: 100%;
       background-color: $social-list-icon-color;
-      position: static;
+      position: relative;
+      left: 75px;
     }
   }
 
   &--yt {
     &::after {
-      @include pseudo(28px, 22px);
+      @include pseudo(28px, 20px);
       mask-image: url("../../icons/social/yt-icon.svg");
       mask-repeat: no-repeat;
       mask-position: center;
       mask-size: 100%;
       background-color: $social-list-icon-color;
-      position: static;
+      position: relative;
     }
   }
 
   &--tg {
     &::after {
-      @include pseudo(28px, 22px);
+      @include pseudo(28px, 20px);
       mask-image: url("../../icons/social/tg-icon.svg");
       mask-repeat: no-repeat;
       mask-position: center;
       mask-size: 100%;
       background-color: $social-list-icon-color;
-      position: static;
+      position: relative;
+      right: 74px;
     }
   }
 

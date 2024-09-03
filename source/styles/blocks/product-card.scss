@@ -33,7 +33,7 @@
 }
 
 .product-card__title {
-  padding: 0 50px 14px 0;
+  padding: 0 50px 15px 0;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
@@ -88,6 +88,7 @@
 
 .product-card__list {
   @include flex (column,space-between,flex-start);
+  margin-bottom: 7px;
   flex-wrap: wrap;
   grid-column: 2/3;
   grid-row: 2/3;
@@ -104,7 +105,7 @@
 
 .product-card__button {
   width: 100%;
-  margin-top: 17px;
+  margin-top: 14px;
   padding: 10px 109px;
   grid-column: 1/-1;
   grid-row: 3/4;

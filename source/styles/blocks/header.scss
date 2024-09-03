@@ -76,18 +76,9 @@
   }
 }
 
-.header--catalog .site-list__item--current {
-  @media (min-width: $desktop-width) {
-    &::after {
-      background-color: $base-bg-green;
-    }
-  }
-}
-
 .header__logo {
   display: flex;
   align-items: center;
-  width: 192px;
 
   @media (min-width: $tablet-width) {
     margin-right: 94px;
@@ -97,4 +88,16 @@
     width: 202px;
     height: 59px;
   }
+}
+
+.header--catalog .site-list__item--current {
+  @media (min-width: $desktop-width) {
+    &::after {
+      background-color: $base-bg-green;
+    }
+  }
+}
+
+.header--catalog .logo__image--text {
+  padding-top: 5px;
 }
