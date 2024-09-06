@@ -30,6 +30,12 @@
       position: relative;
       left: 75px;
     }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        left: 0;
+      }
+    }
   }
 
   &--yt {
@@ -54,6 +60,12 @@
       background-color: $social-list-icon-color;
       position: relative;
       right: 74px;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        left: 0;
+      }
     }
   }
 

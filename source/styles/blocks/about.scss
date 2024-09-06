@@ -172,7 +172,10 @@
 
 .about__item--composition .about__description {
   @media (min-width: $tablet-width) {
-    left: 170px;
+    &::after {
+      top: -1px;
+      left: 170px;
+    }
   }
 }
 
@@ -201,7 +204,7 @@
 
     &::before {
       top: 65px;
-      left: 27px;
+      left: 28px;
     }
 
     &::after {
@@ -260,8 +263,8 @@
     margin-bottom: 0;
 
     &::before {
-      top: 65px;
-      left: 27px;
+      top: 64px;
+      left: 28px;
     }
 
     &::after {
@@ -291,7 +294,7 @@
 .about__item--replace .about__description {
   @media (min-width: $tablet-width) {
     &::after {
-      left: 185px;
+      left: 180px;
     }
   }
 }
@@ -319,7 +322,7 @@
     width: 249px;
 
     &::before {
-      top: 65px;
+      top: 63px;
       left: 27px;
     }
 
