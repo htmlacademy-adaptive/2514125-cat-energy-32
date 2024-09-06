@@ -42,7 +42,7 @@
 }
 
 .additional-products__title {
-  margin-bottom: 34px;
+  margin: 0 0 34px 20px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
@@ -52,7 +52,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 80px;
+    margin: 0 0 80px 30px;
     padding: 0 40px;
     font-size: 32px;
     line-height: 32px;
@@ -61,7 +61,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 80px;
+    margin: 0 0 80px 110px;
     font-size: 40px;
     line-height: 40px;
     grid-column: 1/-1;

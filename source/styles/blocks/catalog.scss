@@ -1,5 +1,5 @@
 .catalog {
-  padding: 0 20px;
+  // padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -23,7 +23,7 @@
   position: relative;
 
   &::after {
-    @include pseudo(100%, 1px);
+    @include pseudo(100vw, 1px);
     background-color: #ebebeb;
     left: 0;
     right: 0;
@@ -51,6 +51,7 @@
   @include flex (column, space-between, center);
   margin-bottom: 26px;
   text-align: center;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 74px;
@@ -70,10 +71,10 @@
   position: relative;
 
   &::after {
-    @include pseudo(100%, 1px);
+    @include pseudo(200vw, 1px);
     background-color: #ebebeb;
     bottom: 0;
-    left: 0;
+    left: -100vw;
   }
 
   @media (min-width: $tablet-width) {

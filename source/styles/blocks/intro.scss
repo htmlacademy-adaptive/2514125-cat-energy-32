@@ -62,7 +62,7 @@
     color: $sec-color-text-black;
     display: grid;
     grid-template-columns: 1fr;
-    padding: 0 30px 443px;
+    padding: 0 30px 445px;
     text-align: start;
   }
 
@@ -80,7 +80,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
-    padding: 65px 0 0 90px;
+    padding: 63px 0 0 90px;
     align-self: flex-start;
     font-size: 60px;
     line-height: 60px;

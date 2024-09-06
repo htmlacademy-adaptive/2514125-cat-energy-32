@@ -59,6 +59,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    counter-reset: section;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,6 +79,10 @@
     @include flex (column, flex-end, center);
     padding: 151px 0 57px;
 
+    &:not(:last-child) {
+      margin-bottom: 37px;
+    }
+
     &:nth-last-child(-n+2) {
       margin-bottom: 0;
     }
@@ -92,6 +97,23 @@
 
 .about__description {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: counter(section);
+      font-family: $secondary-font;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      position: absolute;
+      counter-increment: section 1;
+      color: $section-bg-color;
+      justify-self: end;
+      z-index: -1;
+      top: 0;
+      transform: translate(-50%);
+    }
+  }
 }
 
 .about__item--composition {
@@ -148,6 +170,12 @@
   }
 }
 
+.about__item--composition .about__description {
+  @media (min-width: $tablet-width) {
+    left: 170px;
+  }
+}
+
 .about__item--cooking {
   &::before {
     @include pseudo (26px, 29px);
@@ -195,6 +223,14 @@
     &::after {
       top: 40px;
       left: 0;
+    }
+  }
+}
+
+.about__item--cooking .about__description {
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: 180px;
     }
   }
 }
@@ -252,6 +288,14 @@
   }
 }
 
+.about__item--replace .about__description {
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: 185px;
+    }
+  }
+}
+
 .about__item--timing {
   &::before {
     @include pseudo (26px, 31px);
@@ -300,6 +344,14 @@
       height: 80px;
       top: 40px;
       left: 0;
+    }
+  }
+}
+
+.about__item--timing .about__description {
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: 180px;
     }
   }
 }
