@@ -64,7 +64,7 @@
 
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 63px;
 
     &::after {
       display: none;
@@ -100,4 +100,8 @@
 
 .header--catalog .logo__image--text {
   padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }

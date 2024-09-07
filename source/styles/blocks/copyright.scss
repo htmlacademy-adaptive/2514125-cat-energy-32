@@ -4,12 +4,12 @@
   padding: 20px 0 40px;
 
   @media (min-width: $tablet-width) {
-    width: 161px;
+    width: 162px;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 161px;
+    width: 162px;
   }
 
   &::before {
@@ -31,8 +31,13 @@
     background-color: $base-bg-green;
     opacity: 0.3;
   }
-}
 
+  &--catalog {
+    @media (min-width: $tablet-width) {
+      width: 163px;
+    }
+  }
+}
 
 .copyright__title {
   font-size: 16px;

@@ -6,6 +6,12 @@
   }
 }
 
+.footer--catalog .footer__wrap {
+  @media (min-width: $tablet-width) {
+    padding: 55px 30px;
+  }
+}
+
 .footer__wrap {
   @include flex (column, space-between, center);
   padding: 40px 20px;

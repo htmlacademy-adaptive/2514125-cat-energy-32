@@ -28,13 +28,13 @@
 }
 
 .statistic__title {
-  margin-bottom: 40px;
+  padding: 25px 20px 0;
+  margin-bottom: 15px;
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
   color: $sec-color-text-black;
-  align-self: start;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
@@ -74,7 +74,7 @@
   @include flex (row, space-between, center);
   flex-wrap: wrap;
   column-gap: 32px;
-  margin-bottom: 27px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     @include flex (row, start, center);
@@ -93,6 +93,8 @@
 }
 
 .statistic__item {
+  position: relative;
+
   @include flex (column, space-between, center);
   min-width: 124px;
   padding-top: 13px;
@@ -107,6 +109,7 @@
 }
 
 .statistic__number {
+  padding-bottom: 16px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
@@ -115,6 +118,7 @@
   color: $sec-color-text-black;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 18px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -126,14 +130,14 @@
 }
 
 .statistic__description {
-  padding: 0 10px;
+  padding: 0 15px;
   font-size: 12px;
   line-height: 12px;
   background-color: #eaeaea;
   text-align: center;
-  position: relative;
-  top: 9px;
-  left: -1px;
+  position: absolute;
+  top: 46px;
+  left: 17px;
 
   @media (min-width: $tablet-width) {
     margin-top: 4px;
@@ -141,7 +145,13 @@
     font-size: 14px;
     line-height: 14px;
     background-color: $page-bg-color;
-    top: 6px;
+    top: 58px;
+    left: 26px;
+  }
+
+  &--time {
+    min-width: 142px;
+    left: 8px;
   }
 
   @media (min-width: $desktop-width) {

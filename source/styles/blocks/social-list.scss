@@ -64,6 +64,7 @@
 
     @media (min-width: $tablet-width) {
       &::after {
+        top: 1px;
         left: 0;
       }
     }

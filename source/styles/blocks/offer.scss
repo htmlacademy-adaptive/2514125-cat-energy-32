@@ -41,8 +41,8 @@
     &::before {
       width: 80px;
       height: 82px;
-      top: 30%;
-      left: 10%;
+      top: 28%;
+      left: 11%;
     }
 
     @media (min-resolution: 2dppx) {
@@ -82,7 +82,7 @@
   z-index: 3;
 
   @media (min-width: $tablet-width) {
-    padding: 0 125px 0 400px;
+    padding: 0 105px 0 400px;
     text-align: left;
   }
 

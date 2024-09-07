@@ -18,7 +18,7 @@
 .catalog-card--slim {
   &::before {
     @include pseudo (36px, 50px);
-    background-image: url("../../icons/index/cat-slim-icon-mobile.svg");
+    background-image: url("../../icons/index/cat-slim-icon.svg");
     background-repeat: no-repeat;
     background-size: auto;
     z-index: 2;
@@ -71,7 +71,7 @@
 .catalog-card--pro {
   &::before {
     @include pseudo (67px, 28px);
-    background-image: url("../../icons/index/cat-pro-icon-mobile.svg");
+    background-image: url("../../icons/index/cat-pro-icon.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     z-index: 2;
@@ -93,7 +93,7 @@
       width: 268px;
       height: 112px;
       top: 134px;
-      left: 414px;
+      left: 411px;
     }
 
     &::after {

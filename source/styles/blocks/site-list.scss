@@ -71,3 +71,11 @@
     }
   }
 }
+
+.site-list__item--current-catlog {
+  @media (min-width: $tablet-width) {
+    &::after {
+      top: 30px;
+    }
+  }
+}
