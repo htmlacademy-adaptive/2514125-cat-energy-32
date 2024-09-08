@@ -17,6 +17,7 @@
 
   @media (min-width: $desktop-width) {
     min-width: 565px;
+    padding: 59px 79px;
     background-color: $page-bg-color;
     position: absolute;
     top: 24%;
@@ -58,6 +59,8 @@
 
   @media (min-width: $desktop-width) {
     line-height: 20px;
+    text-align: start;
+    align-items: flex-start;
   }
 }
 
@@ -111,6 +114,10 @@
     margin-bottom: 20px;
     display: flex;
     justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 19px;
   }
 }
 

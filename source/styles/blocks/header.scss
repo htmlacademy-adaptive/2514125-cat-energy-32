@@ -22,8 +22,6 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
-    padding-left: 110px;
-    padding-right: 110px;
     background-color: transparent;
   }
 }
@@ -39,9 +37,8 @@
 .header--main {
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 35px;
-    left: 50%;
-    transform: translate(-50%, 0);
+    top: 30px;
+    left: 80px;
     z-index: 10;
   }
 }
@@ -72,7 +69,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 74px;
+    margin-bottom: 72px;
   }
 }
 
@@ -80,13 +77,9 @@
   display: flex;
   align-items: center;
 
-  @media (min-width: $tablet-width) {
-    // margin-right: 94px;
-  }
-
   @media (min-width: $desktop-width) {
     width: 202px;
-    height: 59px;
+    margin-right: 94px;
   }
 }
 
@@ -103,5 +96,11 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
+  }
+}
+
+.header--catalog .header__wrap {
+  @media (min-width: $desktop-width) {
+    padding: 55px 110px 0;
   }
 }

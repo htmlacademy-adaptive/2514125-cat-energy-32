@@ -18,7 +18,48 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-width: 169px;
+    padding: 0;
     font-size: 16px;
     line-height: 20px;
+    border-bottom: none;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.product-info--weight {
+  @media (min-width: $desktop-width) {
+    &::after {
+      @include pseudo (100%, 1px);
+      background-color: #cdcdcd;
+      bottom: -7px;
+      left: 0;
+    }
+  }
+}
+
+.product-info--taste {
+  @media (min-width: $desktop-width) {
+    &::after {
+      @include pseudo (100%, 1px);
+      background-color: #cdcdcd;
+      bottom: -8px;
+      left: 0;
+    }
+  }
+}
+
+.product-info--price {
+  @media (min-width: $desktop-width) {
+    &::after {
+      @include pseudo (100%, 1px);
+      background-color: #cdcdcd;
+      bottom: -10px;
+      left: 0;
+    }
   }
 }

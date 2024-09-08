@@ -68,6 +68,13 @@
         left: 0;
       }
     }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        top: 1px;
+        left: -1px;
+      }
+    }
   }
 
   &--vk:hover::after,

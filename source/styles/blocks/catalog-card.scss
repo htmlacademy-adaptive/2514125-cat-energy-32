@@ -55,15 +55,15 @@
     &::before {
       width: 70px;
       height: 97px;
-      top: 40px;
-      left: 13%;
+      top: 41px;
+      left: 11.8%;
     }
 
     &::after {
       width: 100px;
       height: 100px;
-      top: 45px;
-      left: 10%;
+      top: 47px;
+      left: 9.1%;
     }
   }
 }
@@ -108,15 +108,15 @@
     &::before {
       width: 134px;
       height: 56px;
-      top: 65px;
-      left: 7%;
+      top: 67px;
+      left: 5.8%;
     }
 
     &::after {
       width: 100px;
       height: 100px;
-      top: 45px;
-      left: 10%;
+      top: 47px;
+      left: 9.1%;
     }
   }
 }
@@ -197,7 +197,7 @@
   @media (min-width: $desktop-width) {
     max-width: 100%;
     padding: 0 56px 0 52px;
-    margin-bottom: 23px;
+    margin-bottom: 27px;
   }
 }
 
@@ -260,8 +260,8 @@
 
   @media (min-width: $desktop-width) {
     &::after {
-      top: 11px;
-      left: 105%;
+      top: 9px;
+      left: 112%;
     }
   }
 }
@@ -281,8 +281,8 @@
 
   @media (min-width: $desktop-width) {
     &::after {
-      top: 11px;
-      left: 105%;
+      top: 9px;
+      left: 109%;
     }
   }
 }

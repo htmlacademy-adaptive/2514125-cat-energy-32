@@ -50,14 +50,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 20px 0 21px;
+    padding: 0 20px 0 18px;
     font-size: 20px;
     line-height: 24px;
   }
 }
 
 .product-card__link {
-  padding: 10px 0;
   display: block;
   grid-column: 1/2;
   grid-row: 1/3;
@@ -66,9 +65,17 @@
     margin-bottom: 16px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 5px;
+  }
+
   &--chiken500g {
     @media (min-width: $tablet-width) {
       padding: 19px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 19px 4px;
     }
   }
 
@@ -77,17 +84,29 @@
     @media (min-width: $tablet-width) {
       padding: 2px 16px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 6px 0;
+    }
   }
 
   &--fish500g {
     @media (min-width: $tablet-width) {
       padding: 18px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 18px 3px;
+    }
   }
 
   &--fish1000g {
     @media (min-width: $tablet-width) {
       padding: 5px 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 6px 0;
     }
   }
 
@@ -96,17 +115,30 @@
       padding: 19px;
       margin-bottom: 18px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      padding: 19px 4px 27px;
+    }
   }
 
   &--buckwheat1000g {
     @media (min-width: $tablet-width) {
       padding: 5px 16px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 6px 0;
+    }
   }
 
   &--rice500g {
     @media (min-width: $tablet-width) {
       padding: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 18px 3px;
     }
   }
 }
@@ -124,7 +156,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 32px;
+    margin-bottom: 36px;
+    row-gap: 13px;
   }
 }
 
@@ -136,11 +169,11 @@
   grid-row: 3/4;
 
   @media (min-width: $tablet-width) {
-    // margin: 2px;
     padding: 10px 94px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 6px;
     padding: 10px 53px 10px 54px;
   }
 }

@@ -53,7 +53,7 @@
   @media (min-width: $desktop-width) {
     min-width: 245px;
     margin-bottom: 99px;
-    padding: 185px 42px 43px;
+    padding: 186px 42px 43px;
     background-image: url("../../images/catalog/catalog-offer-bg-desktop@1x.png");
     grid-column: 4/-1;
     justify-self: end;
@@ -61,8 +61,8 @@
     &::before {
       width: 80px;
       height: 83px;
-      top: 18%;
-      left: 33%;
+      top: 19.6%;
+      left: 34.3%;
     }
 
     @media (min-resolution: 2dppx) {

@@ -18,7 +18,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 900px;
+    width: 922px;
     justify-content: flex-end;
   }
 }
@@ -66,7 +66,7 @@
 
   @media (min-width: $desktop-width) {
     &::after {
-      top: 34px;
+      top: 36px;
       left: 0;
     }
   }
@@ -76,6 +76,12 @@
   @media (min-width: $tablet-width) {
     &::after {
       top: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: 36px;
     }
   }
 }
