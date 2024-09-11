@@ -108,19 +108,20 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     background-image: url("../../images/contacts/map-contact-desktop@1x.png");
 
     &::before {
       top: 131px;
       left: 62.96%;
     }
+  }
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../images/contacts/map-contact-tablet@2x.png");
-    }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/contacts/map-contact-tablet@2x.png");
   }
 }
+
 
 .contacts--gray-bg {
   background-color: $section-bg-color;
