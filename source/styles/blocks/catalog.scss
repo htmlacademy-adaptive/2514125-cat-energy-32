@@ -58,6 +58,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
+    justify-items: center;
+  }
+
+  @media (min-width: 1122px) {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   @media (min-width: $desktop-width) {
