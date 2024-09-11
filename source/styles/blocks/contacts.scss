@@ -1,9 +1,6 @@
 .contacts {
   width: 100%;
-
-  @media (min-width: $desktop-width) {
-    position: relative;
-  }
+  position: relative;
 }
 
 .contacts__container {
@@ -65,42 +62,62 @@
 }
 
 .contacts__map {
-  display: block;
   width: 100%;
   height: 362px;
-  background-image: url("images/contacts/map-contact-mobile@1x.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-image: url("../../images/contacts/map-contact-mobile@1x.png");
   position: relative;
 
-  // &::after {
-  //   @include pseudo (57px, 53px);
-  //   background-image: url("images/contacts/map-pin-mobile@1x.png");
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   z-index: 10;
-  // }
+  &::before {
+    @include pseudo (57px, 53px);
+    background-image: url("../../images/contacts/map-pin-mobile@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 10;
+    top: 139px;
+    left: 42%;
+  }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("images/contacts/map-contact-mobile@2x.png");
+    background-image: url("../../images/contacts/map-contact-mobile@2x.png");
+
+    &::before {
+      background-image: url("../../images/contacts/map-pin-mobile@2x.png");
+    }
   }
 
 
   @media (min-width: $tablet-width) {
     height: 400px;
-    background-image: url("images/contacts/map-contact-tablet@1x.png");
+    background-image: url("../../images/contacts/map-contact-tablet@1x.png");
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("images/contacts/map-contact-tablet@2x.png");
+    &::before {
+      background-image: url("../../images/contacts/map-pin-tablet@1x.png");
+      width: 113px;
+      height: 106px;
+      top: 145px;
+      left: 43.3%;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/contacts/map-contact-tablet@2x.png");
+
+    &::before {
+      background-image: url("../../images/contacts/map-pin-tablet@2x.png");
     }
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("images/contacts/map-contact-desktop@1x.png");
+    background-image: url("../../images/contacts/map-contact-desktop@1x.png");
+
+    &::before {
+      top: 131px;
+      left: 62.96%;
+    }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("images/contacts/map-contact-tablet@2x.png");
+      background-image: url("../../images/contacts/map-contact-tablet@2x.png");
     }
   }
 }

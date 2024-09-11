@@ -11,7 +11,7 @@
 }
 
 .catalog__title {
-  width: 100vw;
+  width: 100%;
   margin-bottom: 41px;
   padding: 0 20px;
   font-family: $secondary-font;
@@ -71,10 +71,10 @@
   position: relative;
 
   &::after {
-    @include pseudo(200vw, 1px);
+    @include pseudo(100%, 1px);
     background-color: #ebebeb;
     bottom: 0;
-    left: -100vw;
+    left: 0;
   }
 
   @media (min-width: $tablet-width) {
