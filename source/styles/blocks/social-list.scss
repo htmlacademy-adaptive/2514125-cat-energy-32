@@ -17,10 +17,23 @@
     width: 132px;
   }
 }
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    width: 132px;
+    padding: 0;
+    border: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 132px;
+  }
+}
 
 .social-list__link {
   &--vk {
     &::after {
+      @include pseudo(28px, 22px);
       @include pseudo(28px, 22px);
       mask-image: url("../../icons/social/vk-icon.svg");
       mask-repeat: no-repeat;

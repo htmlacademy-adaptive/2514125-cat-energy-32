@@ -32,6 +32,7 @@
   color: $contacts-message-color;
 
   @media (min-width: $tablet-width) {
+    min-height: 80px;
     font-size: 20px;
     line-height: 26px;
   }
@@ -48,6 +49,8 @@
   font-style: normal;
 
   @media (min-width: $tablet-width) {
+    @include flex (column, space-between, flex-end);
+
     @include flex (column, space-between, flex-end);
     min-width: 157px;
     line-height: 20px;
