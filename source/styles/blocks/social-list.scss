@@ -1,9 +1,22 @@
 .social-list {
   @include flex (row, space-between, center);
-  width: 280px;
-  padding: 20px 0;
+  width: 100%;
+  padding: 19px 0;
+  gap: 10%;
   flex-wrap: wrap;
   position: relative;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    width: 132px;
+    padding: 0;
+    border: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 132px;
+  }
+}
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
@@ -21,51 +34,88 @@
   &--vk {
     &::after {
       @include pseudo(28px, 22px);
+      @include pseudo(28px, 22px);
       mask-image: url("../../icons/social/vk-icon.svg");
       mask-repeat: no-repeat;
       mask-position: center;
       mask-size: 100%;
       background-color: $social-list-icon-color;
+      position: relative;
+      left: 75px;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        left: 0;
+      }
     }
   }
 
   &--yt {
     &::after {
-      @include pseudo(28px, 22px);
+      @include pseudo(28px, 20px);
       mask-image: url("../../icons/social/yt-icon.svg");
       mask-repeat: no-repeat;
       mask-position: center;
       mask-size: 100%;
       background-color: $social-list-icon-color;
-      right: 50%;
+      position: relative;
     }
   }
 
   &--tg {
     &::after {
-      @include pseudo(28px, 22px);
+      @include pseudo(28px, 20px);
       mask-image: url("../../icons/social/tg-icon.svg");
       mask-repeat: no-repeat;
       mask-position: center;
       mask-size: 100%;
       background-color: $social-list-icon-color;
-      left: 70px;
+      position: relative;
+      right: 74px;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        top: 1px;
+        left: 0;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        top: 1px;
+        left: -1px;
+      }
     }
   }
 
+  &:hover,
   &--vk:hover::after,
   &--yt:hover::after,
   &--tg:hover::after,
+  &:focus,
   &--vk:focus::after,
   &--yt:focus::after,
   &--tg:focus::after {
     background-color: $base-bg-green;
+    outline: none;
   }
 
+  &:active,
   &--vk:active::after,
   &--yt:active::after,
   &--tg:active::after {
     background-color: $base-bg-green;
     opacity: 0.3;
+  }
+
+
+  &.disabled,
+  &.disabled:hover,
+  &.disabled:focus,
+  &.disabled:active {
+    opacity: 0.5;
+    pointer-events: none;
   }
 }

@@ -1,15 +1,15 @@
 .copyright {
   @include flex (row, space-between, center);
-  width: 280px;
+  width: 100%;
   padding: 20px 0 40px;
 
   @media (min-width: $tablet-width) {
-    width: 168px;
+    width: 162px;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 168px;
+    width: 163px;
   }
 
   &::before {
@@ -19,19 +19,43 @@
     mask-position: center;
     mask-size: 100%;
     background-color: $social-list-icon-color;
+    position: static;
+  }
+
+  &--catalog {
+    @media (min-width: $tablet-width) {
+      width: 163px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
   }
 
   &:hover::before,
   &:focus::before {
     background-color: $base-bg-green;
+    outline: none;
   }
 
   &:active::before {
     background-color: $base-bg-green;
     opacity: 0.3;
   }
-}
 
+  &.disabled,
+  &.disabled::before,
+  &.disabled:hover,
+  &.disabled:hover::before,
+  &.disabled:focus,
+  &.disabled:focus::before,
+  &.disabled:active,
+  &.disabled:active::before {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
 
 .copyright__title {
   font-size: 16px;

@@ -1,6 +1,33 @@
 .subscription {
+  position: relative;
+
+  &::before {
+    @include pseudo (108px, 2px);
+    background-color: $base-bg-green;
+    top: 10px;
+    right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 100%;
+      top: 13px;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 15px;
+    }
+  }
+}
+
+.subscription__wrap {
   @include flex (column, space-between, center);
   padding: 0 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -15,23 +42,33 @@
 
 .subscription__title {
   margin-bottom: 32px;
+  padding: 0 20px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: $sec-color-text-black;
+  background-color: $page-bg-color;
   align-self: flex-start;
+  position: relative;
+  display: inline-block;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 66px 40px;
+    margin: 0 0 65px;
+    padding: 0 70px;
     font-size: 32px;
     line-height: 32px;
+
+    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 72px;
+    margin: 0 0 69px 70px;
+    padding: 0 40px;
     font-size: 40px;
     line-height: 40px;
+
+    top: -2px;
   }
 }
 
@@ -72,13 +109,13 @@
 .subscription__input {
   width: 100%;
   margin-bottom: 16px;
-  padding: 13px;
+  padding: 12px;
   font-family: $secondary-font;
   font-size: 20px;
   line-height: 30px;
   color: $base-color-text-black;
   text-transform: uppercase;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
 
   @media (min-width: $tablet-width) {
     width: 60%;
@@ -88,20 +125,62 @@
   @media (min-width: $desktop-width) {
     width: 496px;
   }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px  solid $base-color-text-black;
+  }
+
+  &--error {
+    border: 2px solid #ff8282;
+  }
+
+  &--valid {
+    border: 2px solid $base-bg-green;
+  }
+
+  &:disabled,
+  &.disabled,
+  &:disabled:hover,
+  &.disabled:hover,
+  &:disabled:focus,
+  &.disabled:focus,
+  &:disabled:active,
+  &.disabled:active {
+    opacity: 0.5;
+    pointer-events: none;
+  }
 }
 
 .subscription__button {
   width: 100%;
   margin-bottom: 40px;
   padding: 15px 81px;
+  font-size: 20px;
+  line-height: 26px;
 
   @media (min-width: $tablet-width) {
-    width: 40%;
+    width: 41%;
     margin: 0;
-    padding: 16px 69px;
+    padding: 15px 69px;
   }
 
   @media (min-width: $desktop-width) {
     width: 256px;
+  }
+
+  &:disabled,
+  &.disabled,
+  &:disabled:hover,
+  &.disabled:hover,
+  &:disabled:focus,
+  &.disabled:focus,
+  &:disabled:active,
+  &.disabled:active {
+    opacity: 0.5;
+    pointer-events: none;
   }
 }

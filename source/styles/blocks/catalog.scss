@@ -1,6 +1,4 @@
 .catalog {
-  padding: 0 20px;
-
   @media (min-width: $tablet-width) {
     padding: 0 30px;
   }
@@ -13,17 +11,34 @@
 }
 
 .catalog__title {
+  width: 100%;
   margin-bottom: 41px;
+  padding: 0 20px;
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   color: $sec-color-text-black;
+  position: relative;
+
+  &::after {
+    @include pseudo(100vw, 1px);
+    background-color: #ebebeb;
+    left: 0;
+    right: 0;
+    bottom: -41px;
+  }
 
   @media (min-width: $tablet-width) {
+    width: auto;
     margin-bottom: 84px;
+    padding: 0;
     font-size: 60px;
     line-height: 60px;
+
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -36,17 +51,40 @@
   @include flex (column, space-between, center);
   margin-bottom: 26px;
   text-align: center;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 74px;
+    margin-bottom: 73px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 60px;
+    justify-items: center;
+  }
+
+  @media (min-width: 1180px) {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 71px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 63px 80px;
+  }
+}
+
+.catalog__item {
+  position: relative;
+
+  &::after {
+    @include pseudo(100%, 1px);
+    background-color: #ebebeb;
+    bottom: 0;
+    left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      display: none;
+    }
   }
 }

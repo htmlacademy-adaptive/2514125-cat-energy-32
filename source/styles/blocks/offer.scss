@@ -1,5 +1,7 @@
 .offer {
   @include flex (column, flex-end, center);
+
+  @include flex (column, flex-end, center);
   min-width: 280px;
   margin-bottom: 40px;
   padding: 186px 0 43px;
@@ -14,9 +16,8 @@
     @include pseudo(78px, 80px);
     background-image: url("../../icons/catalog/gift-icon.svg");
     background-repeat: no-repeat;
-    position: absolute;
     top: 20%;
-    left: 35%;
+    left: 36%;
     z-index: 3;
   }
 
@@ -25,7 +26,6 @@
     top: 0;
     left: 0;
     z-index: 2;
-    position: absolute;
     background-color: rgba(104, 183, 56, 0.85);
   }
 
@@ -43,8 +43,8 @@
     &::before {
       width: 80px;
       height: 82px;
-      top: 30%;
-      left: 10%;
+      top: 28%;
+      left: 11%;
     }
 
     @media (min-resolution: 2dppx) {
@@ -55,7 +55,7 @@
   @media (min-width: $desktop-width) {
     min-width: 245px;
     margin-bottom: 99px;
-    padding: 185px 42px 43px;
+    padding: 186px 42px 43px;
     background-image: url("../../images/catalog/catalog-offer-bg-desktop@1x.png");
     grid-column: 4/-1;
     justify-self: end;
@@ -63,8 +63,8 @@
     &::before {
       width: 80px;
       height: 83px;
-      top: 18%;
-      left: 33%;
+      top: 19.6%;
+      left: 34.3%;
     }
 
     @media (min-resolution: 2dppx) {
@@ -84,7 +84,7 @@
   z-index: 3;
 
   @media (min-width: $tablet-width) {
-    padding: 0 125px 0 400px;
+    padding: 0 105px 0 400px;
     text-align: left;
   }
 

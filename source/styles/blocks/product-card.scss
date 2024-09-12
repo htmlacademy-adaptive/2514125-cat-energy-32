@@ -1,20 +1,19 @@
 .product-card {
-  padding: 20px 0 25px;
+  width: 100%;
+  padding: 20px 20px 25px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: left;
 
   @media (min-width: $tablet-width) {
-    min-width: 324px;
-
     @include flex (column, space-between, center);
+    width: 324px;
     padding: 10px 37px 40px;
-    background: linear-gradient(to bottom, $page-bg-color 19%, $section-bg-color 19%);
+    background: linear-gradient(to bottom, $page-bg-color 16%, $section-bg-color 16%);
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 245px;
     width: 245px;
     padding: 10px 38px 40px;
   }
@@ -26,16 +25,34 @@
   grid-row: 1/2;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 23px;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &.disabled,
+  &.disabled:hover,
+  &.disabled:focus,
+  &.disabled:active {
+    opacity: 0.5;
+    pointer-events: none;
+  }
 }
 
 .product-card__title {
-  padding: 0 50px 14px 0;
+  padding: 0 50px 15px 0;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
@@ -45,78 +62,177 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    padding: 0 55px 0 65px;
+    padding: 0 60px 0 58px;
     text-align: center;
     font-size: 20px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 20px 0 21px;
+    padding: 0 20px 0 18px;
     font-size: 20px;
     line-height: 24px;
   }
 }
 
 .product-card__link {
-  padding: 10px 36px;
   display: block;
   grid-column: 1/2;
   grid-row: 1/3;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 41px;
-    padding: 19px;
+    margin-bottom: 16px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 19px 4px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
   }
 
-  &--l {
-    padding: 2px 28px;
+  &--chiken500g {
+    @media (min-width: $tablet-width) {
+      padding: 19px;
+    }
 
+    @media (min-width: $desktop-width) {
+      padding: 19px 4px;
+    }
+  }
+
+
+  &--chiken1000g {
     @media (min-width: $tablet-width) {
       padding: 2px 16px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 12px;
-      padding: 7px 0;
+      padding: 6px 0;
     }
+  }
+
+  &--fish500g {
+    @media (min-width: $tablet-width) {
+      padding: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 18px 3px;
+    }
+  }
+
+  &--fish1000g {
+    @media (min-width: $tablet-width) {
+      padding: 5px 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 6px 0;
+    }
+  }
+
+  &--buckwheat500g {
+    @media (min-width: $tablet-width) {
+      padding: 19px;
+      margin-bottom: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      padding: 19px 4px 27px;
+    }
+  }
+
+  &--buckwheat1000g {
+    @media (min-width: $tablet-width) {
+      padding: 5px 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 6px 0;
+    }
+  }
+
+  &--rice500g {
+    @media (min-width: $tablet-width) {
+      padding: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 18px 3px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &.disabled,
+  &.disabled:hover,
+  &.disabled:focus,
+  &.disabled:active {
+    opacity: 0.5;
+    pointer-events: none;
   }
 }
 
 .product-card__list {
   @include flex (column,space-between,flex-start);
+  margin-bottom: 7px;
   flex-wrap: wrap;
   grid-column: 2/3;
   grid-row: 2/3;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 37px;
+    margin-bottom: 18px;
     flex-direction: row;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 32px;
+    margin-bottom: 36px;
+    row-gap: 13px;
   }
 }
 
 .product-card__button {
   width: 100%;
-  margin-top: 17px;
+  margin-top: 14px;
   padding: 10px 109px;
   grid-column: 1/-1;
   grid-row: 3/4;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
     padding: 10px 94px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 6px;
     padding: 10px 53px 10px 54px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:disabled,
+  &.disabled,
+  &:disabled:hover,
+  &.disabled:hover,
+  &:disabled:focus,
+  &.disabled:focus,
+  &:disabled:active,
+  &.disabled:active {
+    opacity: 0.5;
+    pointer-events: none;
   }
 }
