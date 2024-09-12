@@ -50,8 +50,6 @@
 
   @media (min-width: $tablet-width) {
     @include flex (column, space-between, flex-end);
-
-    @include flex (column, space-between, flex-end);
     min-width: 157px;
     line-height: 20px;
     text-align: end;
