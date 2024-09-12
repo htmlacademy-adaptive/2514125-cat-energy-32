@@ -1,7 +1,5 @@
 .product-info {
   @include flex (row, space-between, center);
-
-  @include flex (row, space-between, center);
   width: 100%;
   flex-wrap: wrap;
   font-size: 12px;
