@@ -238,6 +238,7 @@
   &:hover,
   &:focus {
     opacity: 0.6;
+    outline: none;
   }
 
   &:hover::after,
@@ -245,10 +246,19 @@
     transform-origin: left;
     transform: scale(1.5, 1);
     transition: transform 0.3s ease-in-out;
+    outline: none;
   }
 
   &:active {
     opacity: 0.3;
+  }
+
+  &.disabled,
+  &.disabled:hover,
+  &.disabled:focus,
+  &.disabled:active {
+    opacity: 0.5;
+    pointer-events: none;
   }
 }
 

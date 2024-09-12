@@ -4,6 +4,7 @@ const navToggle = document.querySelector('.main-nav__toggle');
 const siteList = document.querySelector('.site-list');
 
 mainNav.classList.remove('main-nav--nojs');
+siteList.classList.remove('site-list--open');
 
 navToggle.addEventListener('click', () => {
   if (mainNav.classList.contains('main-nav--closed')) {

@@ -1,5 +1,6 @@
 .main-nav {
   font-family: $secondary-font;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     @include flex (row,flex-end,center);
@@ -30,10 +31,23 @@
   &:hover::before,
   &:focus::before {
     opacity: 0.6;
+    outline: none;
   }
 
   &:active::before {
     opacity: 0.3;
+  }
+
+  &:disabled,
+  &.disabled,
+  &:disabled:hover,
+  &.disabled:hover,
+  &:disabled:focus,
+  &.disabled:focus,
+  &:disabled:active,
+  &.disabled:active {
+    opacity: 0.5;
+    pointer-events: none;
   }
 }
 
@@ -100,6 +114,11 @@
   display: none;
 }
 
-.main-nav--nojs .site-list {
+.main-nav--nojs .site-list--open {
   display: block;
+  position: static;
+}
+
+.main-nav--nojs .site-list__item:last-child {
+  border-bottom: none;
 }

@@ -77,19 +77,32 @@
     }
   }
 
+  &:hover,
   &--vk:hover::after,
   &--yt:hover::after,
   &--tg:hover::after,
+  &:focus,
   &--vk:focus::after,
   &--yt:focus::after,
   &--tg:focus::after {
     background-color: $base-bg-green;
+    outline: none;
   }
 
+  &:active,
   &--vk:active::after,
   &--yt:active::after,
   &--tg:active::after {
     background-color: $base-bg-green;
     opacity: 0.3;
+  }
+
+
+  &.disabled,
+  &.disabled:hover,
+  &.disabled:focus,
+  &.disabled:active {
+    opacity: 0.5;
+    pointer-events: none;
   }
 }

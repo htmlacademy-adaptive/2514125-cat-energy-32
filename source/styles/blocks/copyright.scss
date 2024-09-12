@@ -22,9 +22,21 @@
     position: static;
   }
 
+  &--catalog {
+    @media (min-width: $tablet-width) {
+      width: 163px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+
   &:hover::before,
   &:focus::before {
     background-color: $base-bg-green;
+    outline: none;
   }
 
   &:active::before {
@@ -32,10 +44,16 @@
     opacity: 0.3;
   }
 
-  &--catalog {
-    @media (min-width: $tablet-width) {
-      width: 163px;
-    }
+  &.disabled,
+  &.disabled::before,
+  &.disabled:hover,
+  &.disabled:hover::before,
+  &.disabled:focus,
+  &.disabled:focus::before,
+  &.disabled:active,
+  &.disabled:active::before {
+    opacity: 0.5;
+    pointer-events: none;
   }
 }
 

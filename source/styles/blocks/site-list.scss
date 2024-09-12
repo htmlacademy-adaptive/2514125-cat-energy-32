@@ -27,13 +27,20 @@
 .site-list__item {
   padding: 22px 0;
   text-align: center;
-  border-top: 1px solid $border-nav-color-mob;
   border-bottom: 1px solid $border-nav-color-mob;
+
+  &:first-child {
+    border-top: 1px solid $border-nav-color-mob;
+  }
 
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0;
     position: relative;
+
+    &:first-child {
+      border-top: none;
+    }
   }
 }
 
@@ -49,10 +56,19 @@
   &:hover,
   &:focus {
     opacity: 0.6;
+    outline: none;
   }
 
   &:active {
     opacity: 0.3;
+  }
+
+  &.disabled,
+  &.disabled:hover,
+  &.disabled:focus,
+  &.disabled:active {
+    opacity: 0.5;
+    pointer-events: none;
   }
 }
 

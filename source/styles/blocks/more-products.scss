@@ -105,4 +105,16 @@
   @media (min-width: $desktop-width) {
     padding: 10px 38px;
   }
+
+  &:disabled,
+  &.disabled,
+  &:disabled:hover,
+  &.disabled:hover,
+  &:disabled:focus,
+  &.disabled:focus,
+  &:disabled:active,
+  &.disabled:active {
+    opacity: 0.5;
+    pointer-events: none;
+  }
 }

@@ -134,12 +134,24 @@
     border: 2px  solid $base-color-text-black;
   }
 
-  // &:invalid {
-  //   border: 2px solid #ff8282;
-  // }
+  &--error {
+    border: 2px solid #ff8282;
+  }
 
-  &:valid {
+  &--valid {
     border: 2px solid $base-bg-green;
+  }
+
+  &:disabled,
+  &.disabled,
+  &:disabled:hover,
+  &.disabled:hover,
+  &:disabled:focus,
+  &.disabled:focus,
+  &:disabled:active,
+  &.disabled:active {
+    opacity: 0.5;
+    pointer-events: none;
   }
 }
 
@@ -158,5 +170,17 @@
 
   @media (min-width: $desktop-width) {
     width: 256px;
+  }
+
+  &:disabled,
+  &.disabled,
+  &:disabled:hover,
+  &.disabled:hover,
+  &:disabled:focus,
+  &.disabled:focus,
+  &:disabled:active,
+  &.disabled:active {
+    opacity: 0.5;
+    pointer-events: none;
   }
 }

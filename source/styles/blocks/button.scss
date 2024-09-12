@@ -31,6 +31,7 @@
   &:hover,
   &:focus {
     background-color: #5eaa2f;
+    outline: none;
   }
 
   &:active {
@@ -41,6 +42,7 @@
   &--gray:hover,
   &--gray:focus {
     background-color: #ebebeb;
+    outline: none;
   }
 
   &--gray:active {
@@ -52,8 +54,22 @@
   &--transparent-bg:focus,
   &--transparent-bg:active {
     background: transparent;
+    outline: none;
+  }
+
+  &:disabled,
+  &.disabled,
+  &:disabled:hover,
+  &.disabled:hover,
+  &:disabled:focus,
+  &.disabled:focus,
+  &:disabled:active,
+  &.disabled:active {
+    opacity: 0.5;
+    pointer-events: none;
   }
 }
+
 
 .button--bigger-words {
   @media (min-width: $tablet-width) {
@@ -107,11 +123,7 @@
   &:hover::before,
   &:focus::before {
     border-color: #5eaa2f;
-  }
-
-  &:hover::after,
-  &:focus::after {
-    background-color: #5eaa2f;
+    outline: none;
   }
 
   &:active,
