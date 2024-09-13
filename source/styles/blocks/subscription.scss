@@ -54,8 +54,8 @@
   display: inline-block;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 65px;
-    padding: 0 70px;
+    margin: 0 30px 65px;
+    padding: 0 40px;
     font-size: 32px;
     line-height: 32px;
 
@@ -131,15 +131,15 @@
   }
 
   &:focus {
-    border: 2px  solid $base-color-text-black;
+    border: 1px  solid $base-color-text-black;
   }
 
   &--error {
-    border: 2px solid #ff8282;
+    border: 1px solid #ff8282;
   }
 
   &--valid {
-    border: 2px solid $base-bg-green;
+    border: 1px solid $base-bg-green;
   }
 
   &:disabled,

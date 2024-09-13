@@ -14,7 +14,7 @@
 
   @media (min-width: $desktop-width) {
     min-width: 565px;
-    padding: 59px 79px;
+    padding: 57px 79px;
     background-color: $page-bg-color;
     position: absolute;
     top: 24%;
@@ -38,6 +38,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 2px;
     font-size: 20px;
     line-height: 26px;
   }
