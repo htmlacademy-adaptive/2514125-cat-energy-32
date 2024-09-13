@@ -2,7 +2,7 @@
   padding: 0 20px;
   margin-bottom: 19px;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   align-items: center;
 
   @media (min-width: $tablet-width) {
@@ -14,7 +14,7 @@
     @include flex (row, space-between, center);
     max-width: 1440px;
     margin: 0 auto;
-    margin-bottom: 71px;
+    margin-bottom: 41px;
     padding: 0 110px;
   }
 }
@@ -29,6 +29,7 @@
   @media (min-width: $desktop-width) {
     min-width: 570px;
     min-height: 374px;
+    margin-bottom: 30px;
   }
 
   &:not(:last-child) {
@@ -39,7 +40,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 0;
+      margin-bottom: 30px;
     }
   }
 }
