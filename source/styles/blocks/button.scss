@@ -126,6 +126,11 @@
     outline: none;
   }
 
+  &:hover::after,
+  &:focus::after {
+    background-color: #5eaa2f;
+  }
+
   &:active,
   &:active::after {
     background-color: rgba(94, 170, 47, 0.6);
