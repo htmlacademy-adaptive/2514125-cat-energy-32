@@ -48,7 +48,7 @@
 }
 
 .catalog__list {
-  @include flex (column, space-between, center);
+  @include flex (column, space-between, stretch);
   margin-bottom: 26px;
   text-align: center;
   width: 100%;
