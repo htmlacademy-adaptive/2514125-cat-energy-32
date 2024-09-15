@@ -79,7 +79,7 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    @include flex (row, start, center);
+    @include flex (row, flex-start, center);
     width: 367px;
     margin-bottom: 104px;
     column-gap: 43px;
