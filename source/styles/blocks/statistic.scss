@@ -166,12 +166,14 @@
 }
 
 .statistic__price {
+  width: 100%;
   margin-bottom: 20px;
   font-family: $secondary-font;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   color: $sec-color-text-black;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     @include flex (column, space-between, center);

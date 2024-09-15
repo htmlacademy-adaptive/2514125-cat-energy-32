@@ -1,8 +1,8 @@
 .social-list {
-  @include flex (row, space-between, center);
+  @include flex (row, center, center);
   width: 100%;
   padding: 19px 0;
-  gap: 10%;
+  gap: 9%;
   flex-wrap: wrap;
   position: relative;
   border-bottom: 1px solid #d9d9d9;
@@ -11,6 +11,8 @@
     width: 132px;
     padding: 0;
     border: 0;
+    gap: 18%;
+    justify-content: start;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,7 +31,7 @@
       mask-size: 100%;
       background-color: $social-list-icon-color;
       position: relative;
-      left: 75px;
+      left: 0;
     }
 
     @media (min-width: $tablet-width) {
@@ -60,7 +62,7 @@
       mask-size: 100%;
       background-color: $social-list-icon-color;
       position: relative;
-      right: 74px;
+      right: 0;
     }
 
     @media (min-width: $tablet-width) {

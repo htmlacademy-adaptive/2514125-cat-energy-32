@@ -81,7 +81,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    @include flex (column, flex-end, center);
+    @include flex (column, flex-start, center);
     padding: 151px 0 57px;
 
     &:not(:last-child) {
@@ -94,6 +94,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+
     &:nth-child(n) {
       margin-bottom: 0;
     }
@@ -127,7 +129,7 @@
     background-image: url("../../icons/index/leaf-icon.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    top: 26%;
+    top: 16px;
     left: 18px;
     z-index: 2;
   }
@@ -197,7 +199,7 @@
     background-image: url("../../icons/index/glass-icon.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    top: 26%;
+    top: 16px;
     left: 18px;
     z-index: 2;
   }
@@ -256,7 +258,7 @@
     background-image: url("../../icons/index/eat-icon.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    top: 25%;
+    top: 15px;
     left: 18px;
     z-index: 2;
   }
@@ -317,7 +319,7 @@
     background-image: url("../../icons/index/scales-icon.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    top: 25%;
+    top: 15px;
     left: 17px;
     z-index: 2;
   }

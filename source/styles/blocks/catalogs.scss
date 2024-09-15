@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include flex (row, space-between, center);
+    @include flex (row, space-between, stretch);
     max-width: 1440px;
     margin: 0 auto;
     margin-bottom: 41px;
