@@ -24,14 +24,13 @@
   &--vk {
     &::after {
       @include pseudo(28px, 22px);
-      @include pseudo(28px, 22px);
       mask-image: url("../../icons/social/vk-icon.svg");
       mask-repeat: no-repeat;
       mask-position: center;
       mask-size: 100%;
       background-color: $social-list-icon-color;
       position: relative;
-      left: 0;
+      left: 1px;
     }
 
     @media (min-width: $tablet-width) {
@@ -62,7 +61,7 @@
       mask-size: 100%;
       background-color: $social-list-icon-color;
       position: relative;
-      right: 0;
+      right: 1px;
     }
 
     @media (min-width: $tablet-width) {

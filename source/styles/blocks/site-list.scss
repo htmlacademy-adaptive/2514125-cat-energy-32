@@ -13,7 +13,7 @@
 
   @media (min-width: $tablet-width) {
     @include flex (row, flex-start, center);
-    width: 436px;
+    width: 435px;
     gap: 33px;
     flex-wrap: wrap;
   }
