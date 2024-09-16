@@ -12,20 +12,20 @@
   }
 
   @media (min-width: $tablet-width) {
-    @include flex (row, space-between, center);
-    width: 436px;
+    @include flex (row, flex-start, center);
+    width: 435px;
     gap: 33px;
     flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    width: 922px;
+    width: 600px;
     justify-content: flex-end;
   }
 }
 
 .site-list__item {
-  padding: 22px 0;
+  padding: 22px 0 23px;
   text-align: center;
   border-bottom: 1px solid $border-nav-color-mob;
 

@@ -1,8 +1,8 @@
 .social-list {
-  @include flex (row, space-between, center);
+  @include flex (row, center, center);
   width: 100%;
   padding: 19px 0;
-  gap: 10%;
+  gap: 9%;
   flex-wrap: wrap;
   position: relative;
   border-bottom: 1px solid #d9d9d9;
@@ -11,18 +11,8 @@
     width: 132px;
     padding: 0;
     border: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 132px;
-  }
-}
-  border-bottom: 1px solid #d9d9d9;
-
-  @media (min-width: $tablet-width) {
-    width: 132px;
-    padding: 0;
-    border: 0;
+    gap: 18%;
+    justify-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,14 +24,13 @@
   &--vk {
     &::after {
       @include pseudo(28px, 22px);
-      @include pseudo(28px, 22px);
       mask-image: url("../../icons/social/vk-icon.svg");
       mask-repeat: no-repeat;
       mask-position: center;
       mask-size: 100%;
       background-color: $social-list-icon-color;
       position: relative;
-      left: 75px;
+      left: 1px;
     }
 
     @media (min-width: $tablet-width) {
@@ -72,7 +61,7 @@
       mask-size: 100%;
       background-color: $social-list-icon-color;
       position: relative;
-      right: 74px;
+      right: 1px;
     }
 
     @media (min-width: $tablet-width) {

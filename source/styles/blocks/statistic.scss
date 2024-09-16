@@ -24,6 +24,8 @@
     max-width: 1440px;
     padding: 0 110px 75px;
     margin: 0 auto;
+    grid-template-columns: 436px 560px;
+    gap: 0;
   }
 }
 
@@ -50,7 +52,7 @@
     padding: 0;
     font-size: 60px;
     line-height: 60px;
-    grid-column: 1/3;
+    grid-column: 1/2;
     grid-row: 1/2;
   }
 }
@@ -67,7 +69,7 @@
   @media (min-width: $desktop-width) {
     width: 436px;
     margin-bottom: 69px;
-    grid-column: 1/3;
+    grid-column: 1/2;
     grid-row: 2/3;
   }
 }
@@ -76,26 +78,27 @@
   @include flex (row, space-between, center);
   flex-wrap: wrap;
   column-gap: 32px;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
-    @include flex (row, start, center);
+    @include flex (row, flex-start, center);
     width: 367px;
-    margin-bottom: 104px;
+    margin-bottom: 84px;
     column-gap: 43px;
     grid-column: 1/3;
     grid-row: 3/4;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 48px;
-    grid-column: 1/3;
+    margin-bottom: 28px;
+    grid-column: 1/2;
     grid-row: 3/4;
   }
 }
 
 .statistic__item {
   position: relative;
+  margin-bottom: 20px;
 
   @include flex (column, space-between, center);
   min-width: 124px;
@@ -166,12 +169,14 @@
 }
 
 .statistic__price {
+  width: 100%;
   margin-bottom: 20px;
   font-family: $secondary-font;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   color: $sec-color-text-black;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     @include flex (column, space-between, center);
@@ -230,10 +235,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 50px;
     margin-bottom: 8px;
-    grid-column: 3/-1;
+    grid-column: 2/-1;
     grid-row: 1/5;
+
+    // @-moz-document url-prefix() {
+    //   margin-left: 33px;
+    // }
   }
 }
 

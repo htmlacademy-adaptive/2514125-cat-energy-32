@@ -6,16 +6,6 @@
   }
 }
 
-.footer--catalog .footer__wrap {
-  @media (min-width: $tablet-width) {
-    padding: 55px 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 68px 110px;
-  }
-}
-
 .footer__wrap {
   @include flex (column, space-between, center);
   padding: 40px 20px;
@@ -32,6 +22,19 @@
     padding: 68px 110px;
   }
 }
+
+.footer--catalog .footer__wrap {
+  padding: 36px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 49px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 62px 110px;
+  }
+}
+
 
 .footer__logo {
   width: 100%;

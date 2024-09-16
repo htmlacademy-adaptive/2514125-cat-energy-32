@@ -14,7 +14,7 @@
 
   @media (min-width: $desktop-width) {
     min-width: 565px;
-    padding: 59px 79px;
+    padding: 57px 79px;
     background-color: $page-bg-color;
     position: absolute;
     top: 24%;
@@ -24,6 +24,7 @@
 }
 
 .contacts__message {
+  width: 140px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
@@ -32,12 +33,15 @@
   color: $contacts-message-color;
 
   @media (min-width: $tablet-width) {
+    width: 250px;
     min-height: 80px;
     font-size: 20px;
     line-height: 26px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 160px;
+    padding-top: 2px;
     font-size: 20px;
     line-height: 26px;
   }
@@ -49,8 +53,6 @@
   font-style: normal;
 
   @media (min-width: $tablet-width) {
-    @include flex (column, space-between, flex-end);
-
     @include flex (column, space-between, flex-end);
     min-width: 157px;
     line-height: 20px;
