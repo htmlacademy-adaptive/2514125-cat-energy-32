@@ -5,11 +5,19 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+  background-color: $page-bg-color;
+}
+
 body {
   margin: 0;
   font-family: $primary-font;
   font-size: 14px;
   line-height: 18px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   color: $base-color-text-black;
   background-color: $page-bg-color;
 
