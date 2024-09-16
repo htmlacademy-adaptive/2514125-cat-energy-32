@@ -236,6 +236,10 @@
     margin-bottom: 8px;
     grid-column: 3/-1;
     grid-row: 1/5;
+
+    // @-moz-document url-prefix() {
+    //   margin-left: 33px;
+    // }
   }
 }
 
