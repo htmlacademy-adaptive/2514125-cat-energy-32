@@ -1,0 +1,140 @@
+.button {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
+  color: $sec-color-text-white;
+  background-color: $base-bg-green;
+  cursor: pointer;
+
+  &--transparent-bg {
+    background-color: transparent;
+  }
+
+  &--gray {
+    color: $base-color-text-black;
+    background-color: $section-bg-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--gray:hover,
+  &--gray:focus {
+    background-color: #ebebeb;
+    outline: none;
+  }
+
+  &--gray:active {
+    background-color: #ebebeb;
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &--transparent-bg:hover,
+  &--transparent-bg:focus,
+  &--transparent-bg:active {
+    background: transparent;
+    outline: none;
+  }
+
+  &:disabled,
+  &.disabled,
+  &:disabled:hover,
+  &.disabled:hover,
+  &:disabled:focus,
+  &.disabled:focus,
+  &:disabled:active,
+  &.disabled:active {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+
+.button--bigger-words {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.button--slider {
+  width: 4px;
+  height: 256px;
+  background-color: $social-list-icon-color;
+  position: relative;
+  padding: 0;
+  border: none;
+  border-radius: 2px;
+  z-index: 5;
+
+  &::before {
+    @include pseudo (40px, 40px);
+    background-color: $page-bg-color;
+    border: 2px solid $social-list-icon-color;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+  }
+
+  &::after {
+    @include pseudo (24px, 18px);
+    mask-image: url("../../icons/index/arrows-button-icon.svg");
+    background-color: $social-list-icon-color;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 7;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #5eaa2f;
+    outline: none;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: #5eaa2f;
+  }
+
+  &:active,
+  &:active::after {
+    background-color: rgba(94, 170, 47, 0.6);
+  }
+
+  &:active::before {
+    border-color: rgba(94, 170, 47, 1);
+  }
+}

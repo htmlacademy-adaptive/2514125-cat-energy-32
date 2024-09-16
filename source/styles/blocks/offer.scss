@@ -1,0 +1,94 @@
+.offer {
+  @include flex (column, flex-end, center);
+
+  min-width: 280px;
+  margin-bottom: 40px;
+  padding: 186px 0 43px;
+  background-image: url("../../images/catalog/catalog-offer-bg-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    @include pseudo(78px, 80px);
+    background-image: url("../../icons/catalog/gift-icon.svg");
+    background-repeat: no-repeat;
+    top: 20%;
+    left: 36%;
+    z-index: 3;
+  }
+
+  &::after {
+    @include pseudo (100%, 100%);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(104, 183, 56, 0.85);
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/catalog/catalog-offer-bg-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 707px;
+    margin-bottom: 80px;
+    padding: 71px 0 69px;
+    background-image: url("../../images/catalog/catalog-offer-bg-tablet@1x.png");
+    background-position: center 60%;
+
+    &::before {
+      width: 80px;
+      height: 82px;
+      top: 28%;
+      left: 11%;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/catalog/catalog-offer-bg-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+    margin-bottom: 99px;
+    padding: 186px 42px 43px;
+    background-image: url("../../images/catalog/catalog-offer-bg-desktop@1x.png");
+    grid-column: 4/-1;
+    justify-self: end;
+
+    &::before {
+      width: 80px;
+      height: 83px;
+      top: 19.6%;
+      left: 34.3%;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/catalog/catalog-offer-bg-desktop@2x.png");
+    }
+  }
+}
+
+.offer__text {
+  padding: 0 61px 0 58px;
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $sec-color-text-white;
+  text-align: center;
+  z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 105px 0 400px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    text-align: center;
+  }
+}

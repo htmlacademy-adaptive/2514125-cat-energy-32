@@ -1,0 +1,46 @@
+.catalogs {
+  padding: 0 20px;
+  margin-bottom: 19px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include flex (row, space-between, stretch);
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 41px;
+    padding: 0 110px;
+  }
+}
+
+.catalogs__card {
+  min-height: 266px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+    min-height: 374px;
+    margin-bottom: 30px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 30px;
+    }
+  }
+}

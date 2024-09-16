@@ -1,0 +1,35 @@
+.break__mobile {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.break__tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.break__desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.break__nomobile {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

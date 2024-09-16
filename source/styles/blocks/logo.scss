@@ -1,0 +1,38 @@
+.logo {
+  padding: 13px 0 13px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &.disabled,
+  &.disabled:hover,
+  &.disabled:focus,
+  &.disabled:active {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.logo__image--icon {
+  margin-right: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 14px;
+  }
+}
+
